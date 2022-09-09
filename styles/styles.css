@@ -1,3 +1,60 @@
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/Josefin_Sans/static/JosefinSans-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow/Barlow-Regular.ttf");
+}
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Barlow";
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #2B331B;
+}
+
+h1 {
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2, h3, h4, blockquote {
+  font-family: "Josefin Sans";
+  font-weight: normal;
+  color: #ffffff;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
