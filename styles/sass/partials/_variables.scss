@@ -14,4 +14,5 @@ $black: #0F0F0F;
 // Fonts:
 $headingFont: "Josefin Sans";
 $bodyFont: "Barlow";
-$baseFont: 1rem;
+/* if we set our root element font-size to 125%, then 1 rem = 20px */
+$baseFontSize: 1rem;
