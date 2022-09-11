@@ -258,7 +258,8 @@ body {
 
 h1 {
   font-family: "Josefin Sans";
-  font-size: 4rem;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
   font-weight: 600;
   color: #ffffff;
   margin: 0;
@@ -284,6 +285,9 @@ ul {
 a {
   font-family: "Josefin Sans";
   text-decoration: none;
+  text-align: center;
+  line-height: 2.9rem;
+  letter-spacing: 1px;
   color: inherit;
   cursor: pointer;
   -webkit-transition: 0.3s;
@@ -291,7 +295,7 @@ a {
 }
 
 .wrapper {
-  max-width: 1260px;
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
 }
@@ -301,4 +305,39 @@ header {
   background-position: center;
   background-size: cover;
   height: 60vh;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+}
+header nav ul li {
+  padding: 0 20px;
+}
+header nav ul li:first-child a {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #FFD300;
+}
+header .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .flexContainer img {
+  width: 55%;
+  margin-top: 3%;
+}
+
+h1 {
+  width: 30%;
+  margin-left: 5%;
+}
+h1 span {
+  color: #171B0E;
+  background-color: #ffffff;
+  padding: 15px 5px 0 5px;
 }
