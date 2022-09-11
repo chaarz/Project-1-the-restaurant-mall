@@ -1,0 +1,28 @@
+@use "variables" as *;
+
+footer{
+    background-color: $almostBlack;
+    .gallery{
+        padding: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li{
+            width: calc((100%/3) - 2%);
+            margin: 1%;
+            min-width: 200px;
+            img{
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+    p{
+        text-align: center;
+        background-color: $black;
+    }
+}
+
+

@@ -226,7 +226,7 @@ html {
   overflow: hidden;
 }
 
-/* if we set our root element font-size to 125%, then 1 rem = 20px */
+/* we have set our root element font-size to 125%, so 1 rem = 20px */
 @font-face {
   font-family: "Josefin Sans";
   src: url("../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf");
@@ -252,13 +252,16 @@ html {
 
 body {
   font-family: "Barlow";
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.45rem;
   color: #ffffff;
   background-color: #2B331B;
 }
 
 h1 {
   font-family: "Josefin Sans";
-  font-size: 3.5rem;
+  font-size: 3.45rem;
   line-height: 4.5rem;
   font-weight: 600;
   color: #ffffff;
@@ -270,6 +273,17 @@ h2, h3, h4, blockquote {
   font-family: "Josefin Sans";
   font-weight: normal;
   color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 5rem;
+}
+
+p {
+  padding: 0;
   margin: 0;
 }
 
@@ -304,7 +318,7 @@ header {
   background-image: url("../the-restaurant-mall-assets/home-header.jpg");
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 75vh;
 }
 header nav ul {
   display: -webkit-box;
@@ -328,16 +342,70 @@ header .flexContainer {
           justify-content: space-between;
 }
 header .flexContainer img {
-  width: 55%;
-  margin-top: 3%;
+  width: 50%;
+  margin: 3% 0;
 }
 
 h1 {
   width: 30%;
+  z-index: 10;
   margin-left: 5%;
 }
 h1 span {
   color: #171B0E;
   background-color: #ffffff;
   padding: 15px 5px 0 5px;
+}
+
+.mainMenuItems {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.mainMenuItems .items {
+  width: 45%;
+}
+.mainMenuItems .items::before {
+  display: inline-block;
+  content: "";
+  background-image: url("../the-restaurant-mall-assets/location-dot-solid.svg");
+  background-size: 45px 45px;
+  width: 45px;
+  height: 45px;
+}
+
+footer {
+  background-color: #171B0E;
+}
+footer .gallery {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .gallery li {
+  width: 31.3333333333%;
+  margin: 1%;
+  min-width: 200px;
+}
+footer .gallery li img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+footer p {
+  text-align: center;
+  background-color: #0F0F0F;
 }

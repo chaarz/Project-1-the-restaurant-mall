@@ -4,7 +4,7 @@ header{
     background-image: url("../the-restaurant-mall-assets/home-header.jpg");
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 75vh;
         nav ul {
             display: flex;
             padding: 40px 0;
@@ -20,15 +20,18 @@ header{
         .flexContainer{
             display: flex;
             justify-content: space-between;
+            // height: 100%;
             img{
-                width: 55%;
-                margin-top: 3%;
+                width: 50%;
+                // height: auto;
+                margin: 3% 0;
             }
         }
 }
 
 h1{
     width: 30%;
+    z-index: 10;
     margin-left: 5%;
         span {
             color: $almostBlack;

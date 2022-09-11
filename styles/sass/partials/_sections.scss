@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+.mainMenuItems{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .items{
+        width: 45%;
+        &::before{
+            display: inline-block;
+            content: '';
+            background-image: url("../the-restaurant-mall-assets/location-dot-solid.svg");
+            background-size: 45px 45px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
