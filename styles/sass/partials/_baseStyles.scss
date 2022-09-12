@@ -6,3 +6,23 @@
     margin: 0 auto;
 }
 
+button{
+    color: $almostBlack;
+    background-color: $sunflowerYellow;
+    padding: 10px;
+    border: none;
+    // margin: 50px 0;
+    cursor: pointer;
+    // &:hover{
+    //     background-color: ;
+    //     color: ;
+    // }
+    // &:focus{
+    //     background-color: ;
+    //     color: ;
+    // }
+    &.findOut{
+        color: $white;
+        background-color: $black;
+    }
+}
