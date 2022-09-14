@@ -344,7 +344,7 @@ header {
   background-image: url("../the-restaurant-mall-assets/home-header.jpg");
   background-position: center;
   background-size: cover;
-  height: 75vh;
+  height: 70vh;
 }
 header nav ul {
   display: -webkit-box;
@@ -367,9 +367,15 @@ header .flexContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header .flexContainer img {
-  width: 50%;
-  margin: 3% 0;
+header .flexContainer div {
+  width: 45%;
+  margin-left: 2%;
+}
+header .flexContainer div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
 }
 
 h1 {
@@ -388,17 +394,18 @@ h1 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .mainMenuItems .items {
-  width: 45%;
+  width: 48%;
+  margin: 1%;
+  position: relative;
 }
 .mainMenuItems .items::before {
-  display: inline-block;
   content: "";
   background-color: #FFD300;
   background-position: center;
@@ -408,6 +415,9 @@ h1 span {
   width: 30px;
   height: 30px;
   padding: 25px;
+  position: absolute;
+  top: 25px;
+  left: -70px;
 }
 .mainMenuItems .item1::before {
   background-image: url("../the-restaurant-mall-assets/location-dot-solid.svg");
@@ -503,14 +513,15 @@ h1 span {
   min-width: 200px;
 }
 .nature .natureFlexContainer .natureImgContainer img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  -webkit-box-shadow: -15px 15px #FFD300;
+          box-shadow: -15px 15px #FFD300;
 }
 .nature .natureFlexContainer .natureTextContainer {
   width: 60%;
