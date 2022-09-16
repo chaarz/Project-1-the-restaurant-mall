@@ -569,3 +569,13 @@ header nav ul li:first-child a {
   padding-bottom: 5px;
   border-bottom: 2px solid #FFD300;
 }
+
+@media (max-width: 1000px) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+}
+@media (max-width: 800px) {
+  /* all of our styles for TABLET devices will go within this breakpoint */
+}
+@media (max-width: 500px) {
+  /* all of our styles for MOBILE devices will go within this breakpoint */
+}

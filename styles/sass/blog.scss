@@ -6,3 +6,4 @@
 @use "./partials/variables" as *;
 @use "./partials/nav";
 @use "./partials/blogHeader";
+@use "./partials/mediaQueries"; //Media queries partial always comes at the bottom
