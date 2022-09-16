@@ -1,0 +1,11 @@
+// this is the scss file for my Contact page
+
+@use "./partials/setup";
+@use "./partials/typography";
+@use "./partials/baseStyles";
+@use "./partials/variables" as *;
+@use "./partials/nav";
+@use "./partials/contactHeader";
+@use "./partials/contactMain";
+@use "./partials/footer";
+@use "./partials/mediaQueries"; //Media queries partial always comes at the bottom

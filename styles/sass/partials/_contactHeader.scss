@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+header{
+    background-image: url("../the-restaurant-mall-assets/contact-header.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 500px;
+    nav ul li:first-child a{
+        border-bottom: none;
+    }
+    nav ul li:nth-child(4) a{
+        padding-bottom: 5px;
+        border-bottom: 2px solid $sunflowerYellow;
+    }
+}
