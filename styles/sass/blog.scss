@@ -1,10 +1,8 @@
-// this is the scss file for my index.html page
+// this is the scss file for my Blog page
 
 @use "./partials/setup";
 @use "./partials/typography";
 @use "./partials/baseStyles";
-@use "./partials/header";
-@use "./partials/sections";
-@use "./partials/footer";
 @use "./partials/variables" as *;
 @use "./partials/nav";
+@use "./partials/blogHeader";

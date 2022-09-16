@@ -7,18 +7,6 @@ header{
     // background-size: cover;
     // background-position: center;
     // height: 700px;
-        nav ul {
-            display: flex;
-            padding: 50px 0;
-                li{
-                    padding: 0 20px;
-                }
-                li:first-child a {
-                        // text-decoration: underline $sunflowerYellow;
-                        padding-bottom: 5px;
-                        border-bottom: 2px solid $sunflowerYellow;
-                    }
-        }
         .flexContainer{
             display: flex;
             justify-content: space-between;
