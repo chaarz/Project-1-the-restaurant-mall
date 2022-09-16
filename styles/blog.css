@@ -362,6 +362,53 @@ header {
   background-size: cover;
   height: 500px;
 }
+header nav ul li:first-child a {
+  border-bottom: none;
+}
+header nav ul li:nth-child(3) a {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #FFD300;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+footer {
+  background-color: #171B0E;
+}
+footer .gallery {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .gallery li {
+  width: 31.3333333333%;
+  margin: 1%;
+  min-width: 200px;
+}
+footer .gallery li img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+footer p {
+  text-align: center;
+  background-color: #0F0F0F;
+}
 
 @media (max-width: 1000px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */

@@ -5,4 +5,12 @@ header{
     background-position: top;
     background-size: cover;
     height: 500px;
+    nav ul li:first-child a{
+        border-bottom: none;
+    }
+    nav ul li:nth-child(3) a{
+        padding-bottom: 5px;
+        border-bottom: 2px solid $sunflowerYellow;
+    }
 }
+
