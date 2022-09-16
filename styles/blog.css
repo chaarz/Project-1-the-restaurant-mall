@@ -391,7 +391,28 @@ header nav ul li:nth-child(3) a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10%;
+}
+.blogFlexContainer .featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #171B0E;
+  border: 100px solid #2B331B;
+  border-bottom: 300px solid #2B331B;
+}
+.blogFlexContainer .featured div {
+  padding: 0 25px;
+}
+.blogFlexContainer .featured div ul {
+  list-style: initial;
+}
+.blogFlexContainer .featured div ul a {
+  line-height: normal;
+  font-family: "Barlow";
 }
 .blogFlexContainer .employment {
   -ms-flex-preferred-size: 120%;

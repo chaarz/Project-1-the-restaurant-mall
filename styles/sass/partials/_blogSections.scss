@@ -8,12 +8,33 @@
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap; /* added line */
-  }
+}
+
 
 .blogFlexContainer{
     display: flex;
     // justify-content: space-between;
-    gap: 10%;
+    // gap: 10%;
+    .featured{
+        display:flex;
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        background-color: $almostBlack;
+        border: 100px solid $pine;
+        border-bottom: 300px solid $pine;
+        // border-right: 150px solid $pine;
+        div{
+            padding: 0 25px;
+            ul {
+                list-style: initial;
+                a{
+                    line-height: normal;
+                    font-family: $bodyFont;
+                }
+            }
+        }
+    }
     .employment{
         flex-basis: 120%;
         .imgContainer{
