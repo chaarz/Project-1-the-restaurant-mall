@@ -53,12 +53,7 @@
             width: 45%;
             min-width: 400px;
             img{
-                width: 100%;
-                height: auto;
                 margin: 0 auto;
-                // object-fit: cover;
-                // object-position: center;
-                display: block;
                 box-shadow: -20px 20px $sunflowerYellow;
                 position: relative;
                 top: 50px;
@@ -69,19 +64,20 @@
             }
         }
         .foodTextContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
             width: 45%;
             padding: 80px 0;
             min-width: 400px;
             p{
-                margin-right: 10%;
+                width: 75%;
             }
         }
         .try{
             text-align: right;
-            // padding-top: 0;
-            p{
-                margin: 0 0 0 10%;
-            }
+            align-items: flex-end;
         }
     }
 }
@@ -111,40 +107,31 @@
     margin-bottom: 150px;
     h2{
         color: $sunflowerYellow;
-        padding-bottom: 0.5rem;
+        margin-top: 0;
     }
     .natureFlexContainer{
         display: flex;
-        // flex-wrap: wrap; ADD MEDIA QUERY FLEX DIRECTION COLUMN
-        // justify-content: space-between;
+        // flex-wrap: wrap; replaced by added media query with flex direction column
+        // justify-content: space-between; replaced by use of gap
         gap: 6rem;
         @media (max-width: 1000px) {
             flex-direction: column;
-
         }
         .natureImgContainer{
-            // width: 30%;
-            flex-shrink: 0;
-            // min-width: 200px;
+            flex-shrink: 0; //replaced min-width with flex-shrink: 0 for responsiveness
             @media (max-width: 1000px) {
                 display: flex;
                 justify-content: center;
             }
             img{
-                // width: 100%;
-                height: auto;
-                // margin: 0 auto;
-                display: block;
-                object-fit: cover;
-                object-position: center;
                 box-shadow: -20px 20px $sunflowerYellow;
-                // @media (max-width: 1000px) {
-                    
-                // }
             }
         }
         .natureTextContainer{
-            // width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
         }
     }
 }

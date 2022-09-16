@@ -33,7 +33,7 @@ body {
     font-family: $bodyFont;
     font-size: $baseFontSize;
     letter-spacing: 1px;
-    // line-height: 1.45rem;
+    line-height: 1.45rem;
     color: $white;
     background-color: $pine;
 }
@@ -53,7 +53,7 @@ h2, h3, h4, blockquote {
     font-family: $headingFont;
     font-weight: normal;
     color: $white;
-    margin: 0;
+    margin: 1rem 0;
     text-transform: uppercase;
 }
 
