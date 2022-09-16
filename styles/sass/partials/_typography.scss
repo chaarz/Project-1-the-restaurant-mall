@@ -33,7 +33,7 @@ body {
     font-family: $bodyFont;
     font-size: $baseFontSize;
     letter-spacing: 1px;
-    line-height: 1.45rem;
+    // line-height: 1.45rem;
     color: $white;
     background-color: $pine;
 }
@@ -59,7 +59,7 @@ h2, h3, h4, blockquote {
 
 h2{
     font-size: 2.25rem;
-    line-height: 5rem;
+    line-height: 2rem;
 }
 
 h3{

@@ -255,7 +255,6 @@ body {
   font-family: "Barlow";
   font-size: 1rem;
   letter-spacing: 1px;
-  line-height: 1.45rem;
   color: #ffffff;
   background-color: #2B331B;
 }
@@ -280,7 +279,7 @@ h2, h3, h4, blockquote {
 
 h2 {
   font-size: 2.25rem;
-  line-height: 5rem;
+  line-height: 2rem;
 }
 
 h3 {
@@ -330,7 +329,7 @@ button {
 }
 
 button {
-  margin-top: 30px;
+  margin-top: 1rem;
   color: #171B0E;
   background-color: #FFD300;
   padding: 10px;
@@ -340,6 +339,12 @@ button {
 button.findOut {
   color: #ffffff;
   background-color: #0F0F0F;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 header nav ul {
@@ -371,7 +376,7 @@ header nav ul li:nth-child(4) a {
 }
 
 .visually-hidden:not(:focus):not(:active) {
-  position: absolute !important;
+  position: absolute;
   height: 1px;
   width: 1px;
   overflow: hidden;

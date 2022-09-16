@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .visually-hidden:not(:focus):not(:active) { 
-    position: absolute !important;
+    position: absolute;
     height: 1px; 
     width: 1px;
     overflow: hidden;

@@ -111,26 +111,40 @@
     margin-bottom: 150px;
     h2{
         color: $sunflowerYellow;
+        padding-bottom: 0.5rem;
     }
     .natureFlexContainer{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        // flex-wrap: wrap; ADD MEDIA QUERY FLEX DIRECTION COLUMN
+        // justify-content: space-between;
+        gap: 6rem;
+        @media (max-width: 1000px) {
+            flex-direction: column;
+
+        }
         .natureImgContainer{
-            width: 30%;
-            min-width: 200px;
+            // width: 30%;
+            flex-shrink: 0;
+            // min-width: 200px;
+            @media (max-width: 1000px) {
+                display: flex;
+                justify-content: center;
+            }
             img{
-                width: 100%;
+                // width: 100%;
                 height: auto;
                 // margin: 0 auto;
                 display: block;
                 object-fit: cover;
                 object-position: center;
                 box-shadow: -20px 20px $sunflowerYellow;
+                // @media (max-width: 1000px) {
+                    
+                // }
             }
         }
         .natureTextContainer{
-            width: 60%;
+            // width: 60%;
         }
     }
 }
