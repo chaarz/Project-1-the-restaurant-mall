@@ -9,6 +9,9 @@
     justify-content: center;
     flex-wrap: wrap;
     .items{
+        h2{
+            color: $white;
+        }
         // width: calc((100%/2) - 4%);
         width: 45%;
         margin: 0 0 5% 5%;
@@ -25,8 +28,8 @@
             height: 30px;
             padding: 25px;
             position: absolute;
-            top: 25px;
-            left: -70px;
+            top: 15px;
+            left: -60px;
         }
     }
     .item1::before{
@@ -69,7 +72,7 @@
             justify-content: center;
             align-items: flex-start;
             width: 45%;
-            padding: 80px 0;
+            padding: 60px 0;
             min-width: 400px;
             p{
                 width: 75%;
@@ -84,19 +87,15 @@
 
 .giftCard{
     text-align: center;
-    // padding-top: 80px;
     margin: 150px 0;
-    h2{
-        color: $sunflowerYellow
-    }
     p{
         text-align: left;
-        width: 80%;
+        width: 87%;
         margin: 0 auto;
     }
     .banner{
-        margin-top: 100px;
-        height: 50vh;
+        margin-top: 150px;
+        height: 40vh;
         background-image: url("../the-restaurant-mall-assets/banner.jpg");
         background-position: center;
         background-size: cover;
@@ -106,7 +105,6 @@
 .nature{
     margin-bottom: 150px;
     h2{
-        color: $sunflowerYellow;
         margin-top: 0;
     }
     .natureFlexContainer{

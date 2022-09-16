@@ -273,7 +273,7 @@ h1 {
 h2, h3, h4, blockquote {
   font-family: "Josefin Sans";
   font-weight: normal;
-  color: #ffffff;
+  color: #FFD300;
   margin: 1rem 0;
   text-transform: uppercase;
 }
@@ -287,6 +287,7 @@ h3 {
   font-size: 2rem;
   line-height: 2.9rem;
   letter-spacing: 1.3px;
+  color: #ffffff;
 }
 
 p {

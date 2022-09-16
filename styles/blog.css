@@ -273,7 +273,7 @@ h1 {
 h2, h3, h4, blockquote {
   font-family: "Josefin Sans";
   font-weight: normal;
-  color: #ffffff;
+  color: #FFD300;
   margin: 1rem 0;
   text-transform: uppercase;
 }
@@ -287,6 +287,7 @@ h3 {
   font-size: 2rem;
   line-height: 2.9rem;
   letter-spacing: 1.3px;
+  color: #ffffff;
 }
 
 p {
@@ -384,6 +385,31 @@ header nav ul li:nth-child(3) a {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; /* added line */
+}
+
+.blogFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+}
+.blogFlexContainer .employment {
+  -ms-flex-preferred-size: 120%;
+      flex-basis: 120%;
+}
+.blogFlexContainer .employment .imgContainer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.blogFlexContainer .employment .imgContainer img {
+  margin: 0 auto;
+  width: 100%;
+  -webkit-box-shadow: -20px 20px #FFD300;
+          box-shadow: -20px 20px #FFD300;
+}
+
+.comments {
+  margin-left: 40%;
 }
 
 footer {
