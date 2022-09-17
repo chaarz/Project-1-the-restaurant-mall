@@ -14,17 +14,17 @@
 .blogFlexContainer{
     display: flex;
     // justify-content: space-between;
-    gap: 10%;
+    gap: 5%;
     .blogSide{
         width: 380px;
-        margin: 100px 0 0 100px;
+        margin: 150px 0 0 60px;
         display:flex;
         flex-direction: column;
         justify-content: flex-end;
         background-color: $almostBlack;
-        border-bottom: 150px solid $pine;
+        border-bottom: 500px solid red;
         position: relative;
-        padding: 0 15px;
+        padding: 0 10px;
         .featured{
             width: 370px;
         }
@@ -41,29 +41,61 @@
             }
         }
         .sideImgContainer{
-            margin: 0 auto;
             img{
                 position: absolute;
-                max-width: 120%;
+                max-width: 110%;
                 top:-25px;
-                left: -100px;
+                left: -60px;
             }
         }
     }
 
     .employment{
-        flex-basis: 120%;
+        // flex-basis: 120%;
+        margin-right: 15px;
         .imgContainer{
             flex-shrink: 0;
+            background-color: $sunflowerYellow;
             img{
                 margin: 0 auto;
                 width: 100%;
-                box-shadow: -20px 20px $sunflowerYellow;
+                position: relative;
+                top: -15px;
+                right: -15px;
+                // box-shadow: -20px 20px $sunflowerYellow;
             }
         }
+        .employmentText{
+            padding: 45px 45px 100px 45px;
+            border-left: 6px solid $sunflowerYellow;
+            border-bottom: 6px solid $sunflowerYellow;
+            p{
+                margin: 20px 0;
+            }
+        }
+
     }
 }
 
 .comments{
     margin-left: 40%;
+    .comment{
+        display: flex;
+        gap: 3%;
+        margin-bottom: 50px;
+        .commentImg{
+            min-width: 80px;
+            margin: 10px;
+            img{
+                margin: auto;
+            }
+            
+        }
+        .commentText{
+            span{
+                color: $sunflowerYellow;
+                font-weight: 700;
+            }
+        }
+    }
 }
