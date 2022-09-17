@@ -14,27 +14,43 @@
 .blogFlexContainer{
     display: flex;
     // justify-content: space-between;
-    // gap: 10%;
-    .featured{
+    gap: 10%;
+    .blogSide{
+        width: 380px;
+        margin: 100px 0 0 100px;
         display:flex;
         flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
+        justify-content: flex-end;
         background-color: $almostBlack;
-        border: 100px solid $pine;
-        border-bottom: 300px solid $pine;
-        // border-right: 150px solid $pine;
-        div{
-            padding: 0 25px;
+        border-bottom: 150px solid $pine;
+        position: relative;
+        padding: 0 15px;
+        .featured{
+            width: 370px;
+        }
+        .post{
+            margin-top: 50px;
+            padding-bottom: 15px;
             ul {
                 list-style: initial;
+                padding-left: 20px;
                 a{
                     line-height: normal;
                     font-family: $bodyFont;
                 }
             }
         }
+        .sideImgContainer{
+            margin: 0 auto;
+            img{
+                position: absolute;
+                max-width: 120%;
+                top:-25px;
+                left: -100px;
+            }
+        }
     }
+
     .employment{
         flex-basis: 120%;
         .imgContainer{

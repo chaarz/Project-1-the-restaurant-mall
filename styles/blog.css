@@ -290,6 +290,13 @@ h3 {
   color: #ffffff;
 }
 
+h4 {
+  font-size: 1.25rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.8px;
+  margin: 0;
+}
+
 p {
   padding: 0;
   margin: 0;
@@ -391,8 +398,11 @@ header nav ul li:nth-child(3) a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 10%;
 }
-.blogFlexContainer .featured {
+.blogFlexContainer .blogSide {
+  width: 380px;
+  margin: 100px 0 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,19 +410,37 @@ header nav ul li:nth-child(3) a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background-color: #171B0E;
-  border: 100px solid #2B331B;
-  border-bottom: 300px solid #2B331B;
+  border-bottom: 150px solid #2B331B;
+  position: relative;
+  padding: 0 15px;
 }
-.blogFlexContainer .featured div {
-  padding: 0 25px;
+.blogFlexContainer .blogSide .featured {
+  width: 370px;
 }
-.blogFlexContainer .featured div ul {
+.blogFlexContainer .blogSide .post {
+  margin-top: 50px;
+  padding-bottom: 15px;
+}
+.blogFlexContainer .blogSide .post ul {
   list-style: initial;
+  padding-left: 20px;
 }
-.blogFlexContainer .featured div ul a {
+.blogFlexContainer .blogSide .post ul a {
   line-height: normal;
   font-family: "Barlow";
+}
+.blogFlexContainer .blogSide .sideImgContainer {
+  margin: 0 auto;
+}
+.blogFlexContainer .blogSide .sideImgContainer img {
+  position: absolute;
+  max-width: 120%;
+  top: -25px;
+  left: -100px;
 }
 .blogFlexContainer .employment {
   -ms-flex-preferred-size: 120%;
