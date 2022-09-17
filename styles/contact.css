@@ -393,6 +393,18 @@ header nav ul li:nth-child(4) a {
   padding-bottom: 5px;
   border-bottom: 2px solid #FFD300;
 }
+header h1 {
+  margin-left: 1rem;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
 .contactDetails {
   text-align: left;
@@ -425,6 +437,21 @@ header nav ul li:nth-child(4) a {
   font-style: normal;
 }
 
+.formContainer {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.contactForm {
+  width: 100%;
+  background-color: #171B0E;
+  padding: 3rem;
+  -webkit-box-shadow: 25px 25px #FFD300;
+          box-shadow: 25px 25px #FFD300;
+  position: relative;
+  top: -8rem;
+}
+
 .commentForm,
 .contactForm {
   display: -webkit-box;
@@ -438,6 +465,7 @@ header nav ul li:nth-child(4) a {
   -webkit-box-flex: 2.5;
       -ms-flex: 2.5;
           flex: 2.5;
+  margin-bottom: 4rem;
 }
 .commentForm .userInput,
 .contactForm .userInput {
@@ -449,7 +477,10 @@ header nav ul li:nth-child(4) a {
 
 input,
 textarea {
+  color: #ffffff;
   border: none;
+  border-bottom: 2px solid #FFD300;
+  background-color: transparent;
   font-family: "Barlow";
   font-size: clamp(1.125rem, 3vw, 1.25rem);
   width: 100%;
@@ -460,7 +491,12 @@ input {
 }
 
 textarea {
-  padding: 2.5rem 1.5rem;
+  padding: 2rem 1.5rem;
+  border: 2px solid #FFD300;
+}
+
+button {
+  margin-top: 0;
 }
 
 footer {
@@ -491,6 +527,7 @@ footer .gallery li img {
 footer p {
   text-align: center;
   background-color: #0F0F0F;
+  padding: 0.3rem;
 }
 
 @media (max-width: 1000px) {

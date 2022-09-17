@@ -464,7 +464,7 @@ header nav ul li:nth-child(3) a {
 }
 
 .comments {
-  margin-left: 40%;
+  margin: 5% 5% 0 35%;
 }
 .comments .comment {
   display: -webkit-box;
@@ -498,6 +498,7 @@ header nav ul li:nth-child(3) a {
   -webkit-box-flex: 2.5;
       -ms-flex: 2.5;
           flex: 2.5;
+  margin-bottom: 4rem;
 }
 .commentForm .userInput,
 .contactForm .userInput {
@@ -509,7 +510,10 @@ header nav ul li:nth-child(3) a {
 
 input,
 textarea {
+  color: #ffffff;
   border: none;
+  border-bottom: 2px solid #FFD300;
+  background-color: transparent;
   font-family: "Barlow";
   font-size: clamp(1.125rem, 3vw, 1.25rem);
   width: 100%;
@@ -520,7 +524,12 @@ input {
 }
 
 textarea {
-  padding: 2.5rem 1.5rem;
+  padding: 2rem 1.5rem;
+  border: 2px solid #FFD300;
+}
+
+button {
+  margin-top: 0;
 }
 
 footer {
@@ -551,6 +560,7 @@ footer .gallery li img {
 footer p {
   text-align: center;
   background-color: #0F0F0F;
+  padding: 0.3rem;
 }
 
 @media (max-width: 1000px) {

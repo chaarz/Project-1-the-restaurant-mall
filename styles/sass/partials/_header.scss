@@ -7,32 +7,31 @@ header{
     // background-size: cover;
     // background-position: center;
     // height: 700px;
-        .flexContainer{
-            display: flex;
-            justify-content: space-between;
-            .h1Container{
-                margin-left: 5%;
-            }
-            h1{
-                width: 30%;
-                z-index: 10;
-                    span {
-                        color: $almostBlack;
-                        background-color: $white;
-                        padding: 15px 5px 0 5px;
-                    }
-            }
-            .boxImgContainer{
-                width: 70%;
-               
-                img{
-                    width: 100%;
-                    height: auto;
-                    display: block;
-                    position: relative;
-                    top: 70px;
-                }
+    .flexContainer{
+        display: flex;
+        justify-content: space-between;
+        .h1Container{
+            margin-left: 5%;
+        }
+        h1{
+            width: 30%;
+            z-index: 10;
+            span {
+                color: $almostBlack;
+                background-color: $white;
+                padding: 15px 5px 0 5px;
             }
         }
+        .boxImgContainer{
+            width: 70%;
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+                position: relative;
+                top: 70px;
+            }
+        }
+    }
 }
 

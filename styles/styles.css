@@ -607,6 +607,7 @@ footer .gallery li img {
 footer p {
   text-align: center;
   background-color: #0F0F0F;
+  padding: 0.3rem;
 }
 
 header nav ul {
