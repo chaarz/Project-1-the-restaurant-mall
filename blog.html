@@ -79,25 +79,22 @@
                         <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Done euismod scelerisque ligula.</p>
                     </div>
                 </div> <!--comment ends-->
-                <form action="#" method="#" class="myForm" name="myForm">
-                    <div class="userInput">
-                        <label for="userName" class="visually-hidden">Name</label>
-                        <input type="text" id="userName" name="userName" placeholder="Name">
-                    </div>
-    
-                    <div class="userInput">
-                        <label for="email" class="visually-hidden">Email address</label>
-                        <input type="email" id="email" name="email" placeholder="Email address">
-                    </div>
-                    <div class="userMessage">
+                <div class="formContainer">
+                    <form action="#" method="#" class="commentForm" name="myForm">
+                        <div class="userInput">
+                            <label for="userName" class="visually-hidden">Name</label>
+                            <input type="text" id="userName" name="userName" placeholder="Name">
+
+                            <label for="email" class="visually-hidden">Email address</label>
+                            <input type="email" id="email" name="email" placeholder="Email address">
+                        </div>
+
                         <label for="comment" class="visually-hidden">Comment</label>
                         <textarea name="userComment" id="comment" cols="30" rows="10" minlength="5" maxlength="200" placeholder="Comment"></textarea>
-                    </div>
-                    
-                    <div class="userInput">
-                    <button>Post Comment</button>
-                    </div>
-                </form>
+
+                        <button type="submit">Post Comment</button>
+                    </form><!--commentForm ends-->
+                </div> <!--formContainer ends-->
             </div><!--wrapper ends-->
         </section><!--comments ends-->
     </main><!--main ends-->

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f21b5dfadd.js" crossorigin="anonymous"></script>
     <title>Contact | The Restaurant Mall</title>
     <link rel="stylesheet" href="./styles/contact.css">
 </head>
@@ -25,30 +26,48 @@
         <section>
             <div class="wrapper">
                 <div class="contactDetails">
-                    <p>info@email.com</p> <!--ADD SOCIAL MEDIA ICONS AS BEFORE ELEMENTS?-->
-                    <p>123 - 456 - 7890 <br> 123 Queen Street West, Unit 10 <br> Toronto, Ontario <br>M5V2D5</p>
-                </div>
-                <div class="contactForm">
-                    <form action="#" method="#" class="myForm" name="myForm">
+                    <div class="socialIcons">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span class="visually-hidden">Link to Facebook</span><!-- for screen readers only -->
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span class="visually-hidden">Link to Instagram</span><!-- for screen readers only -->
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="visually-hidden">Link to Twitter</span><!-- for screen readers only -->
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <span class="visually-hidden">Link to Whatsapp</span><!-- for screen readers only -->
+                        </a>
+                    </div><!--socialIcons ends-->
+                    <a href="mailto:info@email.com" class="email-link">info@email.com</a>
+                    <address class="address">
+                        123 - 456 - 7890 <br>
+                        123 Queen Street West, Unit 10 <br>
+                        Toronto, Ontario <br>
+                        M5V2D5
+                    </address>
+                </div><!--contactDetails ends-->
+                <div class="formContainer">
+                    <form action="#" method="#" class="contactForm" name="myForm">
                         <div class="userInput">
                             <label for="userName" class="visually-hidden">Name</label>
                             <input type="text" id="userName" name="userName" placeholder="Name">
-                        </div>
-        
-                        <div class="userInput">
+
                             <label for="email" class="visually-hidden">Email address</label>
                             <input type="email" id="email" name="email" placeholder="Email address">
                         </div>
-                        <div class="userMessage">
-                            <label for="message" class="visually-hidden">Message</label>
-                            <textarea name="userMessage" id="message" cols="30" rows="10" minlength="5" maxlength="200" placeholder="Message"></textarea>
-                        </div>
-                        
-                        <div class="userInput">
-                        <button>Submit</button>
-                        </div>
-                    </form>
-                </div> <!--contactForm ends-->
+
+                        <label for="message" class="visually-hidden">Message</label>
+                        <textarea name="userMessage" id="message" cols="30" rows="10" minlength="5" maxlength="200" placeholder="Message"></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form><!--contactForm ends-->
+                </div> <!--formContainer ends-->
             </div> <!--wrapper ends-->
         </section>
     </main>

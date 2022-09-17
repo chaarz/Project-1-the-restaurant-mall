@@ -1,11 +1,32 @@
 @use "variables" as *;
 
-.visually-hidden:not(:focus):not(:active) { 
-    position: absolute;
-    height: 1px; 
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap; /* added line */
-  }
+.contactDetails {
+    text-align: left;
+    padding: 3rem;
+    height: 20rem;
+    .socialIcons {
+        display: flex;
+        gap: 1rem;
+        // padding-bottom: 1rem;
+        i {
+            font-size: 1.5rem;
+            color: $sunflowerYellow;
+            transition: 0.3s;
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
+    }
+    .email-link {
+        font-family: $bodyFont;
+        font-weight: normal;
+        line-height: normal;
+        
+    }
+    .address {
+        font-family: $bodyFont;
+        padding-top: 1rem;
+        font-style: normal;
+    }
+}

@@ -356,6 +356,16 @@ img {
   display: block;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,14 +394,73 @@ header nav ul li:nth-child(4) a {
   border-bottom: 2px solid #FFD300;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap; /* added line */
+.contactDetails {
+  text-align: left;
+  padding: 3rem;
+  height: 20rem;
+}
+.contactDetails .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+.contactDetails .socialIcons i {
+  font-size: 1.5rem;
+  color: #FFD300;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contactDetails .socialIcons i:hover, .contactDetails .socialIcons i:focus {
+  color: #ffffff;
+}
+.contactDetails .email-link {
+  font-family: "Barlow";
+  font-weight: normal;
+  line-height: normal;
+}
+.contactDetails .address {
+  font-family: "Barlow";
+  padding-top: 1rem;
+  font-style: normal;
+}
+
+.commentForm,
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  -webkit-box-flex: 2.5;
+      -ms-flex: 2.5;
+          flex: 2.5;
+}
+.commentForm .userInput,
+.contactForm .userInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+
+input,
+textarea {
+  border: none;
+  font-family: "Barlow";
+  font-size: clamp(1.125rem, 3vw, 1.25rem);
+  width: 100%;
+}
+
+input {
+  padding: 1.5rem;
+}
+
+textarea {
+  padding: 2.5rem 1.5rem;
 }
 
 footer {
