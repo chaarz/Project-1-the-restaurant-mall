@@ -403,11 +403,11 @@ header .flexContainer .boxImgContainer img {
   top: 70px;
 }
 
-.mainMenu {
+.about {
   margin: 100px 0;
 }
 
-.mainMenuItems {
+.aboutItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,15 +417,14 @@ header .flexContainer .boxImgContainer img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.mainMenuItems .items {
-  width: 45%;
-  margin: 0 0 5% 5%;
+.aboutItems .items {
+  width: calc(50% - 1rem);
   position: relative;
 }
-.mainMenuItems .items h2 {
+.aboutItems .items h2 {
   color: #ffffff;
 }
-.mainMenuItems .items::before {
+.aboutItems .items::before {
   content: "";
   background-color: #FFD300;
   background-position: center;
@@ -439,16 +438,16 @@ header .flexContainer .boxImgContainer img {
   top: 15px;
   left: -60px;
 }
-.mainMenuItems .item1::before {
+.aboutItems .item1::before {
   background-image: url("../the-restaurant-mall-assets/location-dot-solid.svg");
 }
-.mainMenuItems .item2::before {
+.aboutItems .item2::before {
   background-image: url("../the-restaurant-mall-assets/users-solid.svg");
 }
-.mainMenuItems .item3::before {
+.aboutItems .item3::before {
   background-image: url("../the-restaurant-mall-assets/file-solid.svg");
 }
-.mainMenuItems .item4::before {
+.aboutItems .item4::before {
   background-image: url("../the-restaurant-mall-assets/phone-flip-solid.svg");
 }
 
@@ -459,29 +458,30 @@ header .flexContainer .boxImgContainer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
-.foodMenu .foodFlexContainer .foodImgContainer {
-  width: 45%;
-  min-width: 400px;
+.foodMenu .foodFlexContainer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.foodMenu .foodFlexContainer .foodImgContainer img {
-  margin: 0 auto;
-  -webkit-box-shadow: -20px 20px #FFD300;
-          box-shadow: -20px 20px #FFD300;
+.foodMenu .foodFlexContainer .menu .foodImgContainer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: relative;
-  top: 50px;
 }
-.foodMenu .foodFlexContainer .foodImgContainer .burger {
+.foodMenu .foodFlexContainer .menu .foodImgContainer img {
+  position: relative;
   -webkit-box-shadow: 20px 20px #FFD300;
           box-shadow: 20px 20px #FFD300;
-  top: -50px;
 }
-.foodMenu .foodFlexContainer .foodTextContainer {
+.foodMenu .foodFlexContainer .menu .foodTextContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,18 +495,24 @@ header .flexContainer .boxImgContainer img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 45%;
-  padding: 60px 0;
-  min-width: 400px;
 }
-.foodMenu .foodFlexContainer .foodTextContainer p {
-  width: 75%;
+.foodMenu .foodFlexContainer .menu1 .foodImgContainer {
+  top: -50px;
+  left: -60px;
 }
-.foodMenu .foodFlexContainer .try {
+.foodMenu .foodFlexContainer .menu2 .foodTextContainer {
   text-align: right;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+.foodMenu .foodFlexContainer .menu2 .foodImgContainer {
+  bottom: -50px;
+  right: -60px;
+}
+.foodMenu .foodFlexContainer .menu2 .foodImgContainer img {
+  -webkit-box-shadow: -20px 20px #FFD300;
+          box-shadow: -20px 20px #FFD300;
 }
 
 .giftCard {
@@ -538,27 +544,9 @@ header .flexContainer .boxImgContainer img {
   display: flex;
   gap: 6rem;
 }
-@media (max-width: 1000px) {
-  .nature .natureFlexContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 .nature .natureFlexContainer .natureImgContainer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-@media (max-width: 1000px) {
-  .nature .natureFlexContainer .natureImgContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 .nature .natureFlexContainer .natureImgContainer img {
   -webkit-box-shadow: -20px 20px #FFD300;
@@ -578,14 +566,6 @@ header .flexContainer .boxImgContainer img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-@media (max-width: 1000px) {
-  .nature .natureFlexContainer .natureTextContainer {
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 footer {
@@ -633,15 +613,49 @@ header nav ul li:first-child a {
   border-bottom: 2px solid #FFD300;
 }
 
-@media (max-width: 1000px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+/****************************
+    Break point: 1200px
+*****************************/
+@media (max-width: 1200px) {
+  .aboutItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .foodMenu .foodFlexContainer .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .foodMenu .foodFlexContainer .menu .foodTextContainer {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .foodMenu .foodFlexContainer .menu .foodImgContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: initial;
+  }
+  .foodMenu .foodFlexContainer .menu2 .foodTextContainer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
-@media (max-width: 800px) {
-  /* all of our styles for TABLET devices will go within this breakpoint */
-}
-@media (max-width: 500px) {
-  /* all of our styles for MOBILE devices will go within this breakpoint */
-}
+/****************************
+    Break point: 1060px
+*****************************/
 @media (max-width: 1060px) {
   .contactFlexContainer {
     -webkit-box-orient: vertical;
@@ -668,4 +682,37 @@ header nav ul li:first-child a {
     margin-bottom: 0;
     padding: 1rem;
   }
+}
+/****************************
+    Break point: 1060px
+*****************************/
+@media (max-width: 1000px) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+  .nature .natureFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+  .nature .natureFlexContainer .natureImgContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nature .natureFlexContainer .natureTextContainer {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  /* all of our styles for TABLET devices will go within this breakpoint */
+}
+@media (max-width: 500px) {
+  /* all of our styles for MOBILE devices will go within this breakpoint */
 }

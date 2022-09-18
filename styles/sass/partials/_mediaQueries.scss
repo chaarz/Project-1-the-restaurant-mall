@@ -1,28 +1,42 @@
+/****************************
+    Break point: 1200px
+*****************************/
+@media (max-width: 1200px) {
 
-@media (max-width: 1000px) {
-    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+    .aboutItems{
+        flex-direction: column;
+        align-items: center;
+    }
 
-//         flex-direction: column;
-//         align-items: center;
-
+    .foodMenu{
+        .foodFlexContainer{
+            .menu{
+                flex-direction: column;
+                .foodTextContainer{
+                    text-align: center;
+                    align-items: center;
+                }
+                .foodImgContainer{
+                    display: flex;
+                    justify-content: center;
+                    position: initial;
+                }
+            }
+            .menu2{
+                .foodTextContainer{
+                    order: 2;
+                }
+            }
+        }
+    }
 }
+/****************************
+    Break point: 1060px
+*****************************/
+@media (max-width: 1060px) {
 
-@media (max-width: 800px) {
-    /* all of our styles for TABLET devices will go within this breakpoint */
+    // CONTACT page
 
-//         flex-direction: column;
-//         align-items: center;
-}
-
-@media (max-width: 500px) {
-    /* all of our styles for MOBILE devices will go within this breakpoint */
-//         flex-direction: column;
-//         align-items: center;
-  }
-
-
-
-  @media (max-width: 1060px) {
     .contactFlexContainer{
         flex-direction: column;
         justify-content: flex-start;
@@ -41,3 +55,54 @@
         }
     }
 }
+
+/****************************
+    Break point: 1060px
+*****************************/
+
+@media (max-width: 1000px) {
+    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+
+//         flex-direction: column;
+//         align-items: center;
+
+
+    // HOME - foodMenu section
+
+
+
+    // HOME - Nature section
+
+    .nature{
+        .natureFlexContainer{
+            flex-direction: column;
+            gap: 4rem;
+            .natureImgContainer{
+                display: flex;
+                justify-content: center;
+            }
+            .natureTextContainer{
+                text-align: center;
+                align-items: center;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+@media (max-width: 800px) {
+    /* all of our styles for TABLET devices will go within this breakpoint */
+
+}
+
+@media (max-width: 500px) {
+    /* all of our styles for MOBILE devices will go within this breakpoint */
+
+  }
+
+
+

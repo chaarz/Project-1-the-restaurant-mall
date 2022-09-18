@@ -1,20 +1,20 @@
 @use "variables" as *;
 
-.mainMenu{
+.about{
     margin: 100px 0;
 }
-.mainMenuItems{
+.aboutItems{
     // padding: 20px 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    // gap: 5%;
     .items{
         h2{
             color: $white;
         }
-        // width: calc((100%/2) - 4%);
-        width: 45%;
-        margin: 0 0 5% 5%;
+        width: calc((100%/2) - 1rem);
+        // margin: 0 0 5% 5%;
         position: relative;
         &::before{
             // display: inline-block;
@@ -50,38 +50,50 @@
     background-color: $almostBlack;
     .foodFlexContainer{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        flex-wrap: wrap;
-        .foodImgContainer{
-            width: 45%;
-            min-width: 400px;
-            img{
-                margin: 0 auto;
-                box-shadow: -20px 20px $sunflowerYellow;
+        // flex-wrap: wrap;
+        // gap: 5%;
+        .menu{
+            display:flex;
+            // gap: 2%;
+            .foodImgContainer{
+                flex-shrink: 0; //replaced min-width with flex-shrink: 0 for responsiveness
                 position: relative;
-                top: 50px;
+                img{
+                    position: relative;
+                    box-shadow: 20px 20px $sunflowerYellow;
+                }
             }
-            .burger{
-                box-shadow: 20px 20px $sunflowerYellow;
+            .foodTextContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                // align-self: flex-end;
+            }
+        }
+
+        .menu1{
+            .foodImgContainer{
                 top: -50px;
+                left: -60px;
             }
         }
-        .foodTextContainer{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            width: 45%;
-            padding: 60px 0;
-            min-width: 400px;
-            p{
-                width: 75%;
+        .menu2{
+            .foodTextContainer{
+                text-align: right;
+                align-items: flex-end;
+            }
+            .foodImgContainer{
+                bottom: -50px;
+                right: -60px;
+                img{
+                    box-shadow: -20px 20px $sunflowerYellow;
+                }
             }
         }
-        .try{
-            text-align: right;
-            align-items: flex-end;
-        }
+        
     }
 }
 
@@ -109,18 +121,11 @@
     }
     .natureFlexContainer{
         display: flex;
-        // flex-wrap: wrap; replaced by added media query with flex direction column
+        // flex-wrap: wrap; replaced by media query with flex direction: column
         // justify-content: space-between; replaced by use of gap
         gap: 6rem;
-        @media (max-width: 1000px) {
-            flex-direction: column;
-        }
         .natureImgContainer{
             flex-shrink: 0; //replaced min-width with flex-shrink: 0 for responsiveness
-            @media (max-width: 1000px) {
-                display: flex;
-                justify-content: center;
-            }
             img{
                 box-shadow: -20px 20px $sunflowerYellow;
             }
@@ -130,10 +135,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            @media (max-width: 1000px) {
-                text-align: center;
-                align-items: center;
-            }
         }
     }
 }
