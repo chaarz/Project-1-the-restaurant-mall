@@ -626,6 +626,9 @@ header nav ul li:first-child a {
         -ms-flex-align: center;
             align-items: center;
   }
+  .aboutItems .items {
+    width: 100%;
+  }
   .foodMenu .foodFlexContainer .menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
