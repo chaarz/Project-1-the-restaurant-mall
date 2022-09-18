@@ -1,26 +1,9 @@
 @use "variables" as *;
 
-.flexContainer{
+.contactFlexContainer{
     display:flex;
     justify-content: space-between;
     // gap: 7%;
-    @media (max-width: 1060px) {
-        flex-direction: column;
-        justify-content: flex-start;
-        // gap: 4rem;
-        .contactDetails{
-            order: 2;
-            padding-top: 0;
-            text-align: center;
-            .socialIcons{
-                justify-content: center;
-            }
-        }
-        .contactForm{
-            margin-bottom:0;
-            padding: 1rem;
-        }
-    }
 }
 
 

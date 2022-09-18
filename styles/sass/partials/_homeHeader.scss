@@ -16,6 +16,7 @@ header{
         h1{
             width: 30%;
             z-index: 10;
+            font-size: clamp(2.2rem, 11vw, 3.45rem);
             span {
                 color: $almostBlack;
                 background-color: $white;

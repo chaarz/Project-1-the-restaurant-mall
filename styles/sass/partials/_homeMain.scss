@@ -23,9 +23,9 @@
             background-position: center;
             background-repeat: no-repeat;
             border-radius: 50%;
-            background-size: 30px 30px;
-            width: 30px;
-            height: 30px;
+            background-size: 1.5rem 1.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
             padding: 25px;
             position: absolute;
             top: 15px;
@@ -130,6 +130,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            @media (max-width: 1000px) {
+                text-align: center;
+                align-items: center;
+            }
         }
     }
 }
