@@ -393,6 +393,9 @@ header nav ul li:nth-child(3) a {
   padding-bottom: 5px;
   border-bottom: 2px solid #FFD300;
 }
+header h1 {
+  margin-left: 1rem;
+}
 
 .blogFlexContainer {
   display: -webkit-box;
@@ -506,6 +509,15 @@ header nav ul li:nth-child(3) a {
   display: -ms-flexbox;
   display: flex;
   gap: 1.5rem;
+}
+@media (max-width: 500px) {
+  .commentForm .userInput,
+.contactForm .userInput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 input,

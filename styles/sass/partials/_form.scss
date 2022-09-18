@@ -10,6 +10,9 @@
     margin-bottom: 4rem;
     .userInput {
         display: flex;
+        @media (max-width: 500px) {
+            flex-direction: column;
+        }
         gap: 1.5rem;
     }
 }
