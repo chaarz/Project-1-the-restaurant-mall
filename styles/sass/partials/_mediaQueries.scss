@@ -19,6 +19,7 @@
                 .foodTextContainer{
                     text-align: center;
                     align-items: center;
+                    padding: 2rem 0;
                 }
                 .foodImgContainer{
                     display: flex;
@@ -47,7 +48,7 @@
         // gap: 4rem;
         .contactDetails{
             order: 2;
-            padding-top: 0;
+            padding: 0;
             text-align: center;
             .socialIcons{
                 justify-content: center;
@@ -73,7 +74,7 @@
 
     // HOME - foodMenu section
 
-
+    // HOME - giftCard section
 
     // HOME - Nature section
 
@@ -93,7 +94,6 @@
     }
 
 
-
 }
 
 
@@ -105,7 +105,31 @@
 
 @media (max-width: 500px) {
     /* all of our styles for MOBILE devices will go within this breakpoint */
+    
+        // HOME - giftCard section
+    .giftCard{
+        p{
+            text-align: center;
+        }
+    }
+    
+    .nature{
+        .natureFlexContainer{
+            .natureImgContainer{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 
+    footer{
+        .gallery{
+            li{
+                width: 100%;
+            }
+        }
+    }
   }
 
 
