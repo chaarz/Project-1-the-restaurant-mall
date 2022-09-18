@@ -6,44 +6,35 @@
 .aboutItems{
     // padding: 20px 0;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     flex-wrap: wrap;
-    // gap: 5%;
+    gap: 2%;
     .items{
-        h2{
-            color: $white;
-        }
         width: calc((100%/2) - 1rem);
-        // margin: 0 0 5% 5%;
-        position: relative;
-        &::before{
-            // display: inline-block;
-            content: '';
-            background-color: $sunflowerYellow;
-            background-position: center;
-            background-repeat: no-repeat;
-            border-radius: 50%;
-            background-size: 1.5rem 1.5rem;
-            width: 1.5rem;
-            height: 1.5rem;
-            padding: 25px;
-            position: absolute;
-            top: 15px;
-            left: -60px;
+        .itemHeader{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .circleIcon{
+                color: $almostBlack;
+                background-color: $sunflowerYellow;
+                border-radius: 50%;
+                width: 2.5rem;
+                height: 2.5rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+            }
+            h2{
+                color: $white;
+            }
+        }
+        p{
+            padding-left: 3.5rem;
         }
     }
-    .item1::before{
-        background-image: url("../the-restaurant-mall-assets/location-dot-solid.svg");
-    }
-    .item2::before{
-        background-image: url("../the-restaurant-mall-assets/users-solid.svg");
-    }
-    .item3::before{
-        background-image: url("../the-restaurant-mall-assets/file-solid.svg");
-    }
-    .item4::before{
-        background-image: url("../the-restaurant-mall-assets/phone-flip-solid.svg");
-    }
+
 }
 
 .foodMenu{
@@ -116,14 +107,11 @@
 
 .nature{
     margin-bottom: 150px;
-    h2{
-        margin-top: 0;
-    }
     .natureFlexContainer{
         display: flex;
         // flex-wrap: wrap; replaced by media query with flex direction: column
         // justify-content: space-between; replaced by use of gap
-        gap: 6rem;
+        gap: 5rem;
         .natureImgContainer{
             flex-shrink: 0; //replaced min-width with flex-shrink: 0 for responsiveness
             img{
@@ -135,6 +123,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            h2{
+                margin: 0;
+            }
+            button{
+                margin-top: 1rem;
+            }
         }
     }
 }

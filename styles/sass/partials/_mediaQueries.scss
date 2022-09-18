@@ -3,15 +3,6 @@
 *****************************/
 @media (max-width: 1200px) {
 
-    .aboutItems{
-        flex-direction: column;
-        align-items: center;
-        .items{
-            width: 100%;
-            // text-align: center;
-        }
-    }
-
     .foodMenu{
         .foodFlexContainer{
             .menu{
@@ -39,6 +30,7 @@
     Break point: 1060px
 *****************************/
 @media (max-width: 1060px) {
+
 
     // CONTACT page
 
@@ -71,28 +63,28 @@
 //         flex-direction: column;
 //         align-items: center;
 
+    //HOME Page - About section
+
+    .aboutItems{
+        flex-direction: column;
+        align-items: center;
+        .items{
+            width: 100%;
+            text-align: center;
+            .itemHeader{
+                justify-content: center;
+            }
+            p{
+                padding-left: 0;
+            }
+        }
+    }
 
     // HOME - foodMenu section
 
     // HOME - giftCard section
 
     // HOME - Nature section
-
-    .nature{
-        .natureFlexContainer{
-            flex-direction: column;
-            gap: 4rem;
-            .natureImgContainer{
-                display: flex;
-                justify-content: center;
-            }
-            .natureTextContainer{
-                text-align: center;
-                align-items: center;
-            }
-        }
-    }
-
 
 }
 
@@ -115,10 +107,18 @@
     
     .nature{
         .natureFlexContainer{
+            flex-direction: column;
+            gap: 4rem;
             .natureImgContainer{
+                display: flex;
+                justify-content: center;
                 img{
                     width: 100%;
                 }
+            }
+            .natureTextContainer{
+                text-align: center;
+                align-items: center;
             }
         }
     }

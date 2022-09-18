@@ -411,44 +411,44 @@ header .flexContainer .boxImgContainer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 2%;
 }
 .aboutItems .items {
   width: calc(50% - 1rem);
-  position: relative;
 }
-.aboutItems .items h2 {
+.aboutItems .items .itemHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.aboutItems .items .itemHeader .circleIcon {
+  color: #171B0E;
+  background-color: #FFD300;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+.aboutItems .items .itemHeader h2 {
   color: #ffffff;
 }
-.aboutItems .items::before {
-  content: "";
-  background-color: #FFD300;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  background-size: 1.5rem 1.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  padding: 25px;
-  position: absolute;
-  top: 15px;
-  left: -60px;
-}
-.aboutItems .item1::before {
-  background-image: url("../the-restaurant-mall-assets/location-dot-solid.svg");
-}
-.aboutItems .item2::before {
-  background-image: url("../the-restaurant-mall-assets/users-solid.svg");
-}
-.aboutItems .item3::before {
-  background-image: url("../the-restaurant-mall-assets/file-solid.svg");
-}
-.aboutItems .item4::before {
-  background-image: url("../the-restaurant-mall-assets/phone-flip-solid.svg");
+.aboutItems .items p {
+  padding-left: 3.5rem;
 }
 
 .foodMenu {
@@ -535,14 +535,11 @@ header .flexContainer .boxImgContainer img {
 .nature {
   margin-bottom: 150px;
 }
-.nature h2 {
-  margin-top: 0;
-}
 .nature .natureFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 6rem;
+  gap: 5rem;
 }
 .nature .natureFlexContainer .natureImgContainer {
   -ms-flex-negative: 0;
@@ -566,6 +563,12 @@ header .flexContainer .boxImgContainer img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.nature .natureFlexContainer .natureTextContainer h2 {
+  margin: 0;
+}
+.nature .natureFlexContainer .natureTextContainer button {
+  margin-top: 1rem;
 }
 
 footer {
@@ -614,18 +617,6 @@ header nav ul li:first-child a {
     Break point: 1200px
 *****************************/
 @media (max-width: 1200px) {
-  .aboutItems {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .aboutItems .items {
-    width: 100%;
-  }
   .foodMenu .foodFlexContainer .menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -689,6 +680,36 @@ header nav ul li:first-child a {
 *****************************/
 @media (max-width: 1000px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+  .aboutItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutItems .items {
+    width: 100%;
+    text-align: center;
+  }
+  .aboutItems .items .itemHeader {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutItems .items p {
+    padding-left: 0;
+  }
+}
+@media (max-width: 800px) {
+  /* all of our styles for TABLET devices will go within this breakpoint */
+}
+@media (max-width: 500px) {
+  /* all of our styles for MOBILE devices will go within this breakpoint */
+  .giftCard p {
+    text-align: center;
+  }
   .nature .natureFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -704,23 +725,14 @@ header nav ul li:first-child a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .nature .natureFlexContainer .natureImgContainer img {
+    width: 100%;
+  }
   .nature .natureFlexContainer .natureTextContainer {
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-@media (max-width: 800px) {
-  /* all of our styles for TABLET devices will go within this breakpoint */
-}
-@media (max-width: 500px) {
-  /* all of our styles for MOBILE devices will go within this breakpoint */
-  .giftCard p {
-    text-align: center;
-  }
-  .nature .natureFlexContainer .natureImgContainer img {
-    width: 100%;
   }
   footer .gallery li {
     width: 100%;
