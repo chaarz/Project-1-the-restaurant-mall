@@ -3,8 +3,8 @@
 @use "./partials/setup";
 @use "./partials/typography";
 @use "./partials/baseStyles";
-@use "./partials/header";
-@use "./partials/sections";
+@use "./partials/homeHeader";
+@use "./partials/homeMain";
 @use "./partials/footer";
 @use "./partials/variables" as *;
 @use "./partials/nav";
