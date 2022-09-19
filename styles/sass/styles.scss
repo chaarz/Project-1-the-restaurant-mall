@@ -8,4 +8,5 @@
 @use "./partials/footer";
 @use "./partials/variables" as *;
 @use "./partials/nav";
+@use "./partials/slideOutNav";
 @use "./partials/mediaQueries"; //Media queries partial always comes at the bottom

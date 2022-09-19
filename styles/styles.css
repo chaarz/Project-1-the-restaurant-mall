@@ -387,7 +387,7 @@ header .flexContainer h1 {
   z-index: 10;
   font-size: clamp(2.2rem, 11vw, 3.45rem);
 }
-header .flexContainer h1 span {
+header .flexContainer h1 .restaurant {
   color: #171B0E;
   background-color: #ffffff;
   padding: 15px 5px 0 5px;
@@ -597,18 +597,144 @@ footer p {
   padding: 0.3rem;
 }
 
-header nav ul {
+header .desktopNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 50px 0;
 }
-header nav ul li {
+header .desktopNav ul li {
   padding: 0 20px;
 }
-header nav ul li:first-child a {
+header .desktopNav ul li:first-child a {
   padding-bottom: 5px;
   border-bottom: 2px solid #FFD300;
+}
+header ul li {
+  position: relative;
+}
+header ul li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #FFD300;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: width 0.25s ease 0s;
+  transition: width 0.25s ease 0s;
+}
+header ul li a:hover:not(.logo):after,
+header ul li a:focus:not(.logo):after {
+  width: 100%;
+}
+
+.menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 30px;
+  height: 30px;
+  z-index: 40;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  position: absolute;
+  height: 3px;
+  background-color: #ffffff;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  width: 100%;
+}
+
+.hamburger::before {
+  content: "";
+  top: -8px;
+}
+
+.hamburger::after {
+  content: "";
+  top: 8px;
+}
+
+input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+
+.slide-out-menu:checked ~ .slide-out-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.slide-out-menu:checked ~ .menu-button .hamburger::before {
+  -webkit-transform: rotate(-90deg) translate(-8px, 0px);
+          transform: rotate(-90deg) translate(-8px, 0px);
+  width: 100%;
+}
+.slide-out-menu:checked ~ .menu-button .hamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 100%;
+}
+.slide-out-menu:checked ~ .menu-button .hamburger::after {
+  -webkit-transform: rotate(90deg) translate(-8px, 0px);
+          transform: rotate(90deg) translate(-8px, 0px);
+  width: 100%;
+}
+
+.slide-out-nav {
+  background-color: #171B0E;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  opacity: 0.95;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.slide-out-nav a {
+  font-size: 2rem;
+}
+.slide-out-nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15vh;
+}
+
+.side-nav {
+  display: none;
 }
 
 /****************************
@@ -705,11 +831,21 @@ header nav ul li:first-child a {
 }
 @media (max-width: 500px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
+  .desktopNav {
+    display: none;
+  }
+  .side-nav {
+    display: block;
+  }
   header .flexContainer {
+    padding-top: 1rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  header .flexContainer .h1Container {
+    margin-left: 4%;
   }
   header .flexContainer .h1Container h1 {
     line-height: 4.3rem;
@@ -718,7 +854,8 @@ header nav ul li:first-child a {
     width: 95%;
   }
   header .flexContainer .boxImgContainer img {
-    position: unset;
+    position: relative;
+    top: 40px;
   }
   .about {
     margin: 2.5rem 0;

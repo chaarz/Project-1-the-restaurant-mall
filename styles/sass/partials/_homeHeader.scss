@@ -17,7 +17,7 @@ header{
             width: 30%;
             z-index: 10;
             font-size: clamp(2.2rem, 11vw, 3.45rem);
-            span {
+            .restaurant {
                 color: $almostBlack;
                 background-color: $white;
                 padding: 15px 5px 0 5px;

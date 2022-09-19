@@ -3,6 +3,7 @@
 *****************************/
 @media (max-width: 1200px) {
 
+    // HOME page - foodMenu section
     .foodMenu{
         .foodFlexContainer{
             .menu{
@@ -60,9 +61,6 @@
 @media (max-width: 1000px) {
     /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 
-//         flex-direction: column;
-//         align-items: center;
-
     //HOME Page - About section
 
     .aboutItems{
@@ -97,11 +95,26 @@
 
 @media (max-width: 500px) {
     /* all of our styles for MOBILE devices will go within this breakpoint */
+
+    // hide desktop nav
+
+    .desktopNav {
+        display: none;
+    }
+
+    // show slide-out nav
+    .side-nav {
+        display: block;
+    }
+
         // HOME - Header
     header{
         .flexContainer{
+            padding-top: 1rem;
             flex-direction: column;
+            // gap: 1rem;
             .h1Container{
+                margin-left: 4%;
                 h1{
                     line-height: 4.3rem;
                 }
@@ -109,7 +122,8 @@
             .boxImgContainer{
                 width: 95%;
                 img{
-                    position: unset;
+                    position: relative;
+                    top: 40px;
                 }
             }
         }

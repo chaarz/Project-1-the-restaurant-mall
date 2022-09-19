@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 header{
-    nav ul {
+    .desktopNav ul {
         display: flex;
         padding: 50px 0;
             li{
@@ -12,5 +12,26 @@ header{
                     padding-bottom: 5px;
                     border-bottom: 2px solid $sunflowerYellow;
                 }
+    }
+    ul{
+        li{
+            position: relative;
+        }
+        li a::after {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: $sunflowerYellow;
+            width: 0;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            transition: width 0.25s ease 0s;
+        }
+    
+        li a:hover:not(.logo):after,
+        li a:focus:not(.logo):after {
+            width: 100%;
+        }
     }
 }
