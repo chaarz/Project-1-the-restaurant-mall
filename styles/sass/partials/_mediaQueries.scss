@@ -97,7 +97,27 @@
 
 @media (max-width: 500px) {
     /* all of our styles for MOBILE devices will go within this breakpoint */
-    
+        // HOME - Header
+    header{
+        .flexContainer{
+            flex-direction: column;
+            .h1Container{
+                h1{
+                    line-height: 4.3rem;
+                }
+            }
+            .boxImgContainer{
+                width: 95%;
+                img{
+                    position: unset;
+                }
+            }
+        }
+    }
+    // Home - About section
+    .about{
+        margin: 2.5rem 0;
+    }
         // HOME - giftCard section
     .giftCard{
         p{

@@ -279,7 +279,7 @@ h2, h3, h4, blockquote {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: clamp(2rem, 7vw, 2.25rem);
   line-height: 3rem;
 }
 
@@ -671,6 +671,24 @@ footer p {
 }
 @media (max-width: 500px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
+  header .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .flexContainer .h1Container h1 {
+    line-height: 4.3rem;
+  }
+  header .flexContainer .boxImgContainer {
+    width: 95%;
+  }
+  header .flexContainer .boxImgContainer img {
+    position: unset;
+  }
+  .about {
+    margin: 2.5rem 0;
+  }
   .giftCard p {
     text-align: center;
   }
