@@ -58,12 +58,12 @@ h2, h3, h4, blockquote {
 }
 
 h2{
-    font-size: clamp(2rem, 7vw, 2.25rem);
+    font-size: clamp(1rem, 7vw, 2.25rem);
     line-height: 3rem;
 }
 
 h3{
-    font-size: 2rem;
+    font-size: clamp(1rem,7vw,2rem);
     line-height: 2.9rem;
     letter-spacing: 1.3px;
     color: $white;

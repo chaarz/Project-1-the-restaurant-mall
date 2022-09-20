@@ -31,7 +31,7 @@
             }
         }
         p{
-            padding-left: 3.5rem;
+            padding: 0 0 1rem 3.5rem;
         }
     }
 
@@ -97,7 +97,7 @@
         margin: 0 auto;
     }
     .banner{
-        margin-top: 150px;
+        margin-top: 7.5rem;
         height: 40vh;
         background-image: url("../the-restaurant-mall-assets/banner.jpg");
         background-position: center;
@@ -106,7 +106,7 @@
 }
 
 .nature{
-    margin-bottom: 150px;
+    margin-bottom: 7.5rem;
     .natureFlexContainer{
         display: flex;
         // flex-wrap: wrap; replaced by media query with flex direction: column
@@ -115,7 +115,7 @@
         .natureImgContainer{
             flex-shrink: 0; //replaced min-width with flex-shrink: 0 for responsiveness
             img{
-                box-shadow: -20px 20px $sunflowerYellow;
+                box-shadow: -1rem 1rem $sunflowerYellow;
             }
         }
         .natureTextContainer{

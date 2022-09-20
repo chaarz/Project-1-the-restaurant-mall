@@ -279,12 +279,12 @@ h2, h3, h4, blockquote {
 }
 
 h2 {
-  font-size: clamp(2rem, 7vw, 2.25rem);
+  font-size: clamp(1rem, 7vw, 2.25rem);
   line-height: 3rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 7vw, 2rem);
   line-height: 2.9rem;
   letter-spacing: 1.3px;
   color: #ffffff;
@@ -455,7 +455,7 @@ header .flexContainer .boxImgContainer img {
   color: #ffffff;
 }
 .aboutItems .items p {
-  padding-left: 3.5rem;
+  padding: 0 0 1rem 3.5rem;
 }
 
 .featured {
@@ -532,7 +532,7 @@ header .flexContainer .boxImgContainer img {
   margin: 0 auto;
 }
 .giftCard .banner {
-  margin-top: 150px;
+  margin-top: 7.5rem;
   height: 40vh;
   background-image: url("../the-restaurant-mall-assets/banner.jpg");
   background-position: center;
@@ -540,7 +540,7 @@ header .flexContainer .boxImgContainer img {
 }
 
 .nature {
-  margin-bottom: 150px;
+  margin-bottom: 7.5rem;
 }
 .nature .natureFlexContainer {
   display: -webkit-box;
@@ -553,8 +553,8 @@ header .flexContainer .boxImgContainer img {
       flex-shrink: 0;
 }
 .nature .natureFlexContainer .natureImgContainer img {
-  -webkit-box-shadow: -20px 20px #FFD300;
-          box-shadow: -20px 20px #FFD300;
+  -webkit-box-shadow: -1rem 1rem #FFD300;
+          box-shadow: -1rem 1rem #FFD300;
 }
 .nature .natureFlexContainer .natureTextContainer {
   display: -webkit-box;
@@ -924,11 +924,24 @@ input[type=checkbox] {
   .about {
     margin: 2.5rem 0;
   }
+  .giftCard {
+    margin: 2rem 0 4rem 0;
+  }
   .giftCard p {
     text-align: center;
   }
+  .giftCard .banner {
+    margin-top: 2rem;
+  }
+  .nature {
+    margin-bottom: 2rem;
+  }
   .nature .natureFlexContainer .natureImgContainer img {
     width: 100%;
+  }
+  .nature .natureFlexContainer .natureTextContainer h2 {
+    line-height: normal;
+    margin-bottom: 1rem;
   }
   .commentForm .userInput,
 .contactForm .userInput {
