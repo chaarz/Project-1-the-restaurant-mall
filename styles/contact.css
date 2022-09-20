@@ -610,7 +610,7 @@ textarea {
   border-bottom: 2px solid #FFD300;
   background-color: transparent;
   font-family: "Barlow";
-  font-size: clamp(1.125rem, 3vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   width: 100%;
 }
 
@@ -713,6 +713,45 @@ footer p {
   .aboutItems .items p {
     padding-left: 0;
   }
+  .blogFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .blogFlexContainer .blogSide {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0 0 4rem 0;
+    border-bottom: 0;
+  }
+  .blogFlexContainer .blogSide .featuredRestFlex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogFlexContainer .blogSide .featuredRestFlex .sideImgContainer {
+    padding: 1rem 0 0 1rem;
+  }
+  .blogFlexContainer .blogSide .featuredRestFlex .sideImgContainer img {
+    position: unset;
+    max-width: 100%;
+  }
+  .blogFlexContainer .blogMain .employment .imgContainer img {
+    width: 100%;
+  }
+  .blogFlexContainer .blogMain .employment .employmentText {
+    padding-left: 3rem;
+  }
+  .blogFlexContainer .blogMain .comments {
+    padding-left: 3rem;
+  }
   .contactFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -768,7 +807,7 @@ footer p {
   }
   header .flexContainer .boxImgContainer img {
     position: relative;
-    top: 40px;
+    top: 2rem;
   }
   .about {
     margin: 2.5rem 0;
@@ -809,5 +848,34 @@ footer p {
   }
   footer .gallery li {
     width: 100%;
+  }
+  .blogFlexContainer .blogSide .featuredRestFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogFlexContainer .blogSide .featuredRestFlex .sideImgContainer {
+    padding: 1rem;
+  }
+  .blogFlexContainer .blogSide .featuredRestFlex .featuredRest {
+    margin-top: 1rem;
+  }
+  .blogFlexContainer .blogMain .employment .employmentText {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .blogFlexContainer .blogMain .comments {
+    padding-left: 1rem;
+    padding-bottom: 0;
+  }
+  .blogFlexContainer .blogMain .comments .comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }

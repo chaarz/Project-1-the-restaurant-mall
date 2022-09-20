@@ -3,27 +3,41 @@
 .blogFlexContainer{
     display: flex;
     // justify-content: space-between;
-    gap: 5%;
+    gap: 5rem;
     .blogSide{
-        width: 380px;
+        flex:1;
         margin-top: 7.5rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-;
+        // display:flex;
+        // flex-direction: column;
+        // justify-content: flex-start;
         background-color: $almostBlack;
         border-bottom: 1700px solid $pine;
-        position: relative;
-        padding: 19rem 0 0 1.25rem;
-        .featuredRest{
-            width: 370px;
-            a{
-                font-family: $bodyFont;
-                font-size: $baseFontSize;
-                line-height: normal;
+        .featuredRestFlex{
+            display:flex;
+            flex-direction: column;
+            .sideImgContainer{
+                img{
+                    position: relative;
+                    max-width: 120%;
+                    top:-25px;
+                    left: -77px;
+                }
+            }
+            .featuredRest{
+                padding: 0 1rem 0 2rem;
+                h4{
+                    line-height: normal;
+                }
+                a{
+                    font-family: $bodyFont;
+                    font-size: $baseFontSize;
+                    line-height: normal;
+                }
             }
         }
         .post{
             margin-top: 50px;
+            padding: 0 1rem 0 2rem;
             padding-bottom: 15px;
             ul {
                 list-style: initial;
@@ -34,16 +48,9 @@
                 }
             }
         }
-        .sideImgContainer{
-            img{
-                position: absolute;
-                max-width: 110%;
-                top:-25px;
-                left: -60px;
-            }
-        }
     }
     .blogMain{
+        flex: 2;
         .employment{
             border-left: 6px solid $sunflowerYellow;
             .imgContainer{
@@ -57,10 +64,11 @@
                 }
             }
             .employmentText{
-                padding: 0 1rem 5rem 5rem;
+                padding: 0 0 5rem 5rem;
                 border-bottom: 6px solid $sunflowerYellow;
                 h2{
                     margin-top: 0;
+                    line-height: normal;
                 }
                 p{
                     margin: 20px 0;
