@@ -521,11 +521,13 @@ header .desktopNav ul li:nth-child(3) a {
 }
 header h1 {
   margin-left: 1rem;
+  font-size: clamp(2.2rem, 11vw, 3.45rem);
 }
 @media (max-width: 500px) {
   header h1 {
     margin-left: 0;
     text-align: center;
+    padding-top: 10rem;
   }
 }
 
@@ -636,9 +638,6 @@ header h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.5rem;
-  -webkit-box-flex: 2.5;
-      -ms-flex: 2.5;
-          flex: 2.5;
   margin-bottom: 4rem;
 }
 .commentForm .userInput,
@@ -646,15 +645,7 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media (max-width: 500px) {
-  .commentForm .userInput,
-.contactForm .userInput {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+  gap: 3rem;
 }
 
 input,
@@ -713,20 +704,20 @@ footer p {
     Break point: 1200px
 *****************************/
 @media (max-width: 1200px) {
-  .featured .foodFlexContainer .menu {
+  .featured .featFlexContainer .menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .featured .foodFlexContainer .menu .foodTextContainer {
+  .featured .featFlexContainer .menu .featTextContainer {
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 2rem 0;
   }
-  .featured .foodFlexContainer .menu .foodImgContainer {
+  .featured .featFlexContainer .menu .featImgContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -735,7 +726,7 @@ footer p {
             justify-content: center;
     position: initial;
   }
-  .featured .foodFlexContainer .menu2 .foodTextContainer {
+  .featured .featFlexContainer .menu2 .featTextContainer {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -858,6 +849,13 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .commentForm .userInput,
+.contactForm .userInput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer .gallery li {
     width: 100%;

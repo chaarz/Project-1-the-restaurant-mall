@@ -741,20 +741,20 @@ input[type=checkbox] {
     Break point: 1200px
 *****************************/
 @media (max-width: 1200px) {
-  .featured .foodFlexContainer .menu {
+  .featured .featFlexContainer .menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .featured .foodFlexContainer .menu .foodTextContainer {
+  .featured .featFlexContainer .menu .featTextContainer {
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 2rem 0;
   }
-  .featured .foodFlexContainer .menu .foodImgContainer {
+  .featured .featFlexContainer .menu .featImgContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -763,7 +763,7 @@ input[type=checkbox] {
             justify-content: center;
     position: initial;
   }
-  .featured .foodFlexContainer .menu2 .foodTextContainer {
+  .featured .featFlexContainer .menu2 .featTextContainer {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -886,6 +886,13 @@ input[type=checkbox] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .commentForm .userInput,
+.contactForm .userInput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer .gallery li {
     width: 100%;

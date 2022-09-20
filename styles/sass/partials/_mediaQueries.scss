@@ -5,22 +5,22 @@
 
     // HOME page - foodMenu section
     .featured{
-        .foodFlexContainer{
+        .featFlexContainer{
             .menu{
                 flex-direction: column;
-                .foodTextContainer{
+                .featTextContainer{
                     text-align: center;
                     align-items: center;
                     padding: 2rem 0;
                 }
-                .foodImgContainer{
+                .featImgContainer{
                     display: flex;
                     justify-content: center;
                     position: initial;
                 }
             }
             .menu2{
-                .foodTextContainer{
+                .featTextContainer{
                     order: 2;
                 }
             }
@@ -107,7 +107,7 @@
         display: block;
     }
 
-        // HOME - Header
+    // HOME - Header
     header{
         .flexContainer{
             padding-top: 1rem;
@@ -128,17 +128,17 @@
             }
         }
     }
-    // Home - About section
+    // HOME - About section
     .about{
         margin: 2.5rem 0;
     }
-        // HOME - giftCard section
+    // HOME - giftCard section
     .giftCard{
         p{
             text-align: center;
         }
     }
-    
+    // HOME - nature section
     .nature{
         .natureFlexContainer{
             flex-direction: column;
@@ -157,6 +157,16 @@
         }
     }
 
+    // FORMS - Blog & Contact pages
+        .commentForm,
+        .contactForm {
+            .userInput {
+                    flex-direction: column;
+            }
+            
+        }
+
+    //FOOTER - All pages
     footer{
         .gallery{
             li{

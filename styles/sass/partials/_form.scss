@@ -6,13 +6,11 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    flex: 2.5;
+    // flex: 2.5;
     margin-bottom: 4rem;
     .userInput {
         display: flex;
-        @media (max-width: 500px) {
-            flex-direction: column;
-        }
+        gap: 3rem;
     }
 }
 
