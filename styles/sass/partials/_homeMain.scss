@@ -37,9 +37,9 @@
 
 }
 
-.foodMenu{
+.featured{
     background-color: $almostBlack;
-    .foodFlexContainer{
+    .featFlexContainer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -48,7 +48,7 @@
         .menu{
             display:flex;
             // gap: 2%;
-            .foodImgContainer{
+            .featImgContainer{
                 flex-shrink: 0; //replaced min-width with flex-shrink: 0 for responsiveness
                 position: relative;
                 img{
@@ -56,7 +56,7 @@
                     box-shadow: 20px 20px $sunflowerYellow;
                 }
             }
-            .foodTextContainer{
+            .featTextContainer{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -66,17 +66,17 @@
         }
 
         .menu1{
-            .foodImgContainer{
+            .featImgContainer{
                 top: -50px;
                 left: -60px;
             }
         }
         .menu2{
-            .foodTextContainer{
+            .featTextContainer{
                 text-align: right;
                 align-items: flex-end;
             }
-            .foodImgContainer{
+            .featImgContainer{
                 bottom: -50px;
                 right: -60px;
                 img{

@@ -449,10 +449,10 @@ header .flexContainer .boxImgContainer img {
   padding-left: 3.5rem;
 }
 
-.foodMenu {
+.featured {
   background-color: #171B0E;
 }
-.foodMenu .foodFlexContainer {
+.featured .featFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,22 +464,22 @@ header .flexContainer .boxImgContainer img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.foodMenu .foodFlexContainer .menu {
+.featured .featFlexContainer .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.foodMenu .foodFlexContainer .menu .foodImgContainer {
+.featured .featFlexContainer .menu .featImgContainer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   position: relative;
 }
-.foodMenu .foodFlexContainer .menu .foodImgContainer img {
+.featured .featFlexContainer .menu .featImgContainer img {
   position: relative;
   -webkit-box-shadow: 20px 20px #FFD300;
           box-shadow: 20px 20px #FFD300;
 }
-.foodMenu .foodFlexContainer .menu .foodTextContainer {
+.featured .featFlexContainer .menu .featTextContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,21 +494,21 @@ header .flexContainer .boxImgContainer img {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.foodMenu .foodFlexContainer .menu1 .foodImgContainer {
+.featured .featFlexContainer .menu1 .featImgContainer {
   top: -50px;
   left: -60px;
 }
-.foodMenu .foodFlexContainer .menu2 .foodTextContainer {
+.featured .featFlexContainer .menu2 .featTextContainer {
   text-align: right;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.foodMenu .foodFlexContainer .menu2 .foodImgContainer {
+.featured .featFlexContainer .menu2 .featImgContainer {
   bottom: -50px;
   right: -60px;
 }
-.foodMenu .foodFlexContainer .menu2 .foodImgContainer img {
+.featured .featFlexContainer .menu2 .featImgContainer img {
   -webkit-box-shadow: -20px 20px #FFD300;
           box-shadow: -20px 20px #FFD300;
 }
@@ -741,20 +741,20 @@ input[type=checkbox] {
     Break point: 1200px
 *****************************/
 @media (max-width: 1200px) {
-  .foodMenu .foodFlexContainer .menu {
+  .featured .foodFlexContainer .menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .foodMenu .foodFlexContainer .menu .foodTextContainer {
+  .featured .foodFlexContainer .menu .foodTextContainer {
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 2rem 0;
   }
-  .foodMenu .foodFlexContainer .menu .foodImgContainer {
+  .featured .foodFlexContainer .menu .foodImgContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -763,7 +763,7 @@ input[type=checkbox] {
             justify-content: center;
     position: initial;
   }
-  .foodMenu .foodFlexContainer .menu2 .foodTextContainer {
+  .featured .foodFlexContainer .menu2 .foodTextContainer {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;

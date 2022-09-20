@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="wrapper">
-            <nav>
+            <nav class="desktopNav">
                 <ul>
                     <li><a href="./index.html" title="Go back to Home page">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -18,30 +18,50 @@
                     <li><a href="./contact.html" title="Go to our Contact page">Contact</a></li>
                 </ul>
             </nav>
+            
+            <!-- Slide Out Nav -->
+            <div class="side-nav">
+                <input type="checkbox" id="slide-out-menu" class="slide-out-menu">
+                <label for="slide-out-menu" class="menu-button">
+                    <span class="hamburger"></span>
+                    <span class="visually-hidden">Slide-Out Navigation Menu</span><!-- for screen readers only -->
+                </label>
+
+                <nav class="slide-out-nav" id="slide-out-nav">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
             <h1>Blog</h1>
         </div> <!--wrapper ends-->
     </header>
     <main>
-        <section>
-            <div class="blogFlexContainer">
-                <div class="blogSide">
-                    <div class="sideImgContainer">
-                        <img src="./the-restaurant-mall-assets/blog-side-image.jpg" alt="plated salmon dish on bed of spinach with diced vegetables and sauce">
-                    </div>
-                    <div class="featured">
-                        <h4>Featured Restaurants</h4>
-                        <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
-                    </div>
-                    <div class="post">
-                        <h4>Recent Posts</h4>
-                        <ul>
-                            <li><a href="#">Donec facilisis tortor ut</a></li>
-                            <li><a href="#">Augue lacinia at viverra</a></li>
-                            <li><a href="#">Semper sed sapien metus</a></li>
-                            <li><a href="#">Scelerisque nec pharetra id</a></li>
-                        </ul>
-                    </div>
-                </div><!--featured ends-->
+        <div class="wrapper blogFlexContainer">
+            <section class="blogSide">
+                <div class="sideImgContainer">
+                    <img src="./the-restaurant-mall-assets/blog-side-image.jpg" alt="plated salmon dish on bed of spinach with diced vegetables and sauce">
+                </div>
+                <div class="featuredRest">
+                    <h4>Featured Restaurants</h4>
+                    <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="./index.html#featured">Find out more.</a></p>
+                </div>
+                <div class="post">
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li><a href="#">Donec facilisis tortor ut</a></li>
+                        <li><a href="#">Augue lacinia at viverra</a></li>
+                        <li><a href="#">Semper sed sapien metus</a></li>
+                        <li><a href="#">Scelerisque nec pharetra id</a></li>
+                    </ul>
+                </div>
+            </section><!--blogSide ends-->
+
+            <section class="blogMain">
                 <div class="employment">
                     <div class="imgContainer">
                         <img src="./the-restaurant-mall-assets/blog-post-image.jpg" alt="server setting tables in contemporary restaurant dining room">
@@ -54,49 +74,48 @@
                         consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut get imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat get semper id, viverra get nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit.</p>
                         <p>Present facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula.</p>
-                    </div>
+                    </div><!--employmentText ends-->
                 </div><!--employment ends-->
-            </div><!--blogFlexContainer ends-->
-        </section>
-        <section class="comments">
-            <div class="wrapper">
-                <h3>Comments:</h3>
-                <div class="comment">
-                    <div class="commentImg">
-                        <img src="./the-restaurant-mall-assets/comment-1.jpg" alt="Ali's profile picture">
-                    </div>
-                    <div class="commentText">
-                        <p><span>Tuesday October 9th, 2019 by Ali</span></p>
-                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Done euismod scelerisque igula. Maecenas eu varius risus..</p>
-                    </div>
-                </div> <!--comment ends-->
-                <div class="comment">
-                    <div class="commentImg">
-                        <img src="./the-restaurant-mall-assets/comment-2.jpg" alt="Lisa's profile picture">
-                    </div>
-                    <div class="commentText">
-                        <p><span>Wednesday October 10th, 2019 by Lisa</span></p>
-                        <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Done euismod scelerisque ligula.</p>
-                    </div>
-                </div> <!--comment ends-->
-                <div class="formContainer">
-                    <form action="#" method="#" class="commentForm" name="myForm">
-                        <div class="userInput">
-                            <label for="userName" class="visually-hidden">Name</label>
-                            <input type="text" id="userName" name="userName" placeholder="Name">
 
-                            <label for="email" class="visually-hidden">Email address</label>
-                            <input type="email" id="email" name="email" placeholder="Email address">
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <div class="comment comment1">
+                        <div class="commentImg">
+                            <img src="./the-restaurant-mall-assets/comment-1.jpg" alt="Ali's profile picture">
                         </div>
+                        <div class="commentText">
+                            <p><span>Tuesday October 9th, 2019 by Ali</span></p>
+                            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Done euismod scelerisque igula. Maecenas eu varius risus..</p>
+                        </div>
+                    </div> <!--comment1 ends-->
+                    <div class="comment comment2">
+                        <div class="commentImg">
+                            <img src="./the-restaurant-mall-assets/comment-2.jpg" alt="Lisa's profile picture">
+                        </div>
+                        <div class="commentText">
+                            <p><span>Wednesday October 10th, 2019 by Lisa</span></p>
+                            <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Done euismod scelerisque ligula.</p>
+                        </div>
+                    </div> <!--comment2 ends-->
+                    <div class="formContainer">
+                        <form action="#" method="#" class="commentForm" name="myForm">
+                            <div class="userInput">
+                                <label for="userName" class="visually-hidden">Name</label>
+                                <input type="text" id="userName" name="userName" placeholder="Name">
 
-                        <label for="comment" class="visually-hidden">Comment</label>
-                        <textarea name="userComment" id="comment" cols="30" rows="10" minlength="5" maxlength="200" placeholder="Comment"></textarea>
+                                <label for="email" class="visually-hidden">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="Email address">
+                            </div>
 
-                        <button type="submit">Post Comment</button>
-                    </form><!--commentForm ends-->
-                </div> <!--formContainer ends-->
-            </div><!--wrapper ends-->
-        </section><!--comments ends-->
+                            <label for="comment" class="visually-hidden">Comment</label>
+                            <textarea name="userComment" id="comment" cols="30" rows="10" minlength="5" maxlength="200" placeholder="Comment"></textarea>
+
+                            <button type="submit">Post Comment</button>
+                        </form><!--Form ends-->
+                    </div> <!--formContainer ends-->
+                </div><!--comments ends-->
+            </section><!--blogMain ends-->
+        </div><!--wrapper blogFlexContainer ends-->
     </main><!--main ends-->
     <footer>
         <p>Copyright © 2019 Juno College</p>
