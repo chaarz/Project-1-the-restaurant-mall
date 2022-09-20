@@ -560,7 +560,7 @@ header h1 {
 .contactDetails .socialIcons i:hover, .contactDetails .socialIcons i:focus {
   color: #ffffff;
 }
-.contactDetails .email-link {
+.contactDetails .emailLink {
   font-family: "Barlow";
   font-weight: normal;
   line-height: normal;
@@ -569,11 +569,6 @@ header h1 {
   font-family: "Barlow";
   padding-top: 1rem;
   font-style: normal;
-}
-
-.formContainer {
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
 }
 
 .contactForm {
@@ -693,9 +688,31 @@ footer p {
   }
 }
 /****************************
-    Break point: 1060px
+    Break point: 1000px
 *****************************/
-@media (max-width: 1060px) {
+@media (max-width: 1000px) {
+  /* Styles for smaller DESKTOP and tablet devices go within this breakpoint */
+  .aboutItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutItems .items {
+    width: 100%;
+    text-align: center;
+  }
+  .aboutItems .items .itemHeader {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutItems .items p {
+    padding-left: 0;
+  }
   .contactFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -723,37 +740,10 @@ footer p {
   }
 }
 /****************************
-    Break point: 1060px
+    Break point: 500px
 *****************************/
-@media (max-width: 1000px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
-  .aboutItems {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .aboutItems .items {
-    width: 100%;
-    text-align: center;
-  }
-  .aboutItems .items .itemHeader {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .aboutItems .items p {
-    padding-left: 0;
-  }
-}
-@media (max-width: 800px) {
-  /* all of our styles for TABLET devices will go within this breakpoint */
-}
 @media (max-width: 500px) {
-  /* all of our styles for MOBILE devices will go within this breakpoint */
+  /* Styles for MOBILE devices go within this breakpoint */
   .desktopNav {
     display: none;
   }

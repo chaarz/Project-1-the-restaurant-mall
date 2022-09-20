@@ -3,7 +3,6 @@
 .contactFlexContainer{
     display:flex;
     justify-content: space-between;
-    // gap: 7%;
 }
 
 
@@ -24,7 +23,7 @@
             }
         }
     }
-    .email-link {
+    .emailLink {
         font-family: $bodyFont;
         font-weight: normal;
         line-height: normal;
@@ -37,9 +36,6 @@
     }
 }
 
-.formContainer{
-    flex-basis: 65%;
-}
 .contactForm{
     flex-shrink: 0;
     width: 100%;

@@ -3,7 +3,8 @@
 *****************************/
 @media (max-width: 1200px) {
 
-    // HOME page - foodMenu section
+    // HOME page - featured section
+
     .featured{
         .featFlexContainer{
             .menu{
@@ -27,11 +28,30 @@
         }
     }
 }
-/****************************
-    Break point: 1060px
-*****************************/
-@media (max-width: 1060px) {
 
+/****************************
+    Break point: 1000px
+*****************************/
+
+@media (max-width: 1000px) {
+    /* Styles for smaller DESKTOP and tablet devices go within this breakpoint */
+
+    //HOME Page - About section
+
+    .aboutItems{
+        flex-direction: column;
+        align-items: center;
+        .items{
+            width: 100%;
+            text-align: center;
+            .itemHeader{
+                justify-content: center;
+            }
+            p{
+                padding-left: 0;
+            }
+        }
+    }
 
     // CONTACT page
 
@@ -55,49 +75,13 @@
 }
 
 /****************************
-    Break point: 1060px
+    Break point: 500px
 *****************************/
 
-@media (max-width: 1000px) {
-    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
-
-    //HOME Page - About section
-
-    .aboutItems{
-        flex-direction: column;
-        align-items: center;
-        .items{
-            width: 100%;
-            text-align: center;
-            .itemHeader{
-                justify-content: center;
-            }
-            p{
-                padding-left: 0;
-            }
-        }
-    }
-
-    // HOME - foodMenu section
-
-    // HOME - giftCard section
-
-    // HOME - Nature section
-
-}
-
-
-
-@media (max-width: 800px) {
-    /* all of our styles for TABLET devices will go within this breakpoint */
-
-}
-
 @media (max-width: 500px) {
-    /* all of our styles for MOBILE devices will go within this breakpoint */
+    /* Styles for MOBILE devices go within this breakpoint */
 
     // hide desktop nav
-
     .desktopNav {
         display: none;
     }
@@ -108,11 +92,11 @@
     }
 
     // HOME - Header
+
     header{
         .flexContainer{
             padding-top: 1rem;
             flex-direction: column;
-            // gap: 1rem;
             .h1Container{
                 margin-left: 4%;
                 h1{
@@ -129,16 +113,19 @@
         }
     }
     // HOME - About section
+
     .about{
         margin: 2.5rem 0;
     }
     // HOME - giftCard section
+
     .giftCard{
         p{
             text-align: center;
         }
     }
     // HOME - nature section
+
     .nature{
         .natureFlexContainer{
             flex-direction: column;
@@ -158,6 +145,7 @@
     }
 
     // FORMS - Blog & Contact pages
+
         .commentForm,
         .contactForm {
             .userInput {
@@ -167,6 +155,7 @@
         }
 
     //FOOTER - All pages
+
     footer{
         .gallery{
             li{
