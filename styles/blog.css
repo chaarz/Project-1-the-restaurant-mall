@@ -344,10 +344,19 @@ button {
   padding: 15px 15px 10px 15px;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+button:hover, button:focus {
+  background-color: #ffffff;
 }
 button.findOut {
   color: #ffffff;
   background-color: #0F0F0F;
+}
+button.findOut:hover, button.findOut:focus {
+  color: #171B0E;
+  background-color: #FFD300;
 }
 
 img {
@@ -376,8 +385,8 @@ header .desktopNav ul li {
   padding: 0 20px;
 }
 header .desktopNav ul li:first-child a {
-  padding-bottom: 5px;
-  border-bottom: 2px solid #FFD300;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #FFD300;
 }
 header ul li {
   position: relative;
@@ -394,8 +403,8 @@ header ul li a::after {
   -webkit-transition: width 0.25s ease 0s;
   transition: width 0.25s ease 0s;
 }
-header ul li a:hover:not(.logo):after,
-header ul li a:focus:not(.logo):after {
+header ul li a:hover::after,
+header ul li a:focus::after {
   width: 100%;
 }
 
@@ -516,8 +525,8 @@ header .desktopNav ul li:first-child a {
   border-bottom: none;
 }
 header .desktopNav ul li:nth-child(3) a {
-  padding-bottom: 5px;
-  border-bottom: 2px solid #FFD300;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #FFD300;
 }
 header h1 {
   margin-left: 1rem;
@@ -570,6 +579,10 @@ header h1 {
   font-family: "Barlow";
   font-size: 1rem;
   line-height: normal;
+  color: #FFD300;
+}
+.blogFlexContainer .blogSide .featuredRestFlex .featuredRest a:hover, .blogFlexContainer .blogSide .featuredRestFlex .featuredRest a:focus {
+  color: #ffffff;
 }
 .blogFlexContainer .blogSide .post {
   margin-top: 50px;
