@@ -53,6 +53,23 @@
         }
     }
 
+        // HOME - nature section
+
+        .nature{
+            .natureFlexContainer{
+                flex-direction: column;
+                gap: 4rem;
+                .natureImgContainer{
+                    display: flex;
+                    justify-content: center;
+                }
+                .natureTextContainer{
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+        }
+
     // BLOG page
 
     .blogFlexContainer{
@@ -166,18 +183,10 @@
 
     .nature{
         .natureFlexContainer{
-            flex-direction: column;
-            gap: 4rem;
             .natureImgContainer{
-                display: flex;
-                justify-content: center;
                 img{
                     width: 100%;
                 }
-            }
-            .natureTextContainer{
-                text-align: center;
-                align-items: center;
             }
         }
     }
