@@ -721,6 +721,19 @@ footer p {
   background-color: #0F0F0F;
   padding: 0.3rem;
 }
+footer .carousel {
+  position: relative;
+}
+footer .carousel .carousel-button {
+  position: absolute;
+  top: 11.5rem;
+}
+footer .carousel .prev {
+  left: -2.5rem;
+}
+footer .carousel .next {
+  right: -2.5rem;
+}
 
 /****************************
     Break point: 1200px

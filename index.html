@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f21b5dfadd.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
     <title>Home | The Restaurant Mall</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
@@ -137,7 +138,11 @@
         </section><!--nature ends-->
     </main><!--Main ends -->
     <footer>
-        <div class="wrapper">
+        <div class="wrapper carousel">
+            <button class="carousel-button prev" aria-label="carousel button previous">
+                <i class="fa-solid fa-angle-left"></i>
+                <span class="visually-hidden">Carousel button previous</span>
+            </button>
             <ul class="gallery">
                 <li>
                     <img src="./the-restaurant-mall-assets/gallery-image-1.jpg" alt="patio string lights with edison bulbs at night">
@@ -148,7 +153,17 @@
                 <li>
                     <img src="./the-restaurant-mall-assets/gallery-image-3.jpg" alt="dishes displayed in bowls on set wooden table viewed from above">
                 </li>
+                <!-- <li>
+                    <img src="./the-restaurant-mall-assets/gallery-image-4.jpg" alt="sea food pasta dish viewed from above">
+                </li>
+                <li>
+                    <img src="./the-restaurant-mall-assets/gallery-image-5.jpg" alt="plated sandwich with brick wall background">
+                </li> -->
             </ul>
+            <button class="carousel-button next" aria-label="carousel button next">
+                <i class="fa-solid fa-angle-right"></i>
+                <span class="visually-hidden">Carousel button next</span>
+            </button>
         </div> <!--wrapper ends-->
         <p>Copyright © 2019 Juno College</p>
     </footer><!--footer ends-->

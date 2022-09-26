@@ -21,6 +21,20 @@ footer{
         background-color: $black;
         padding: 0.3rem;
     }
+    .carousel{
+        position:relative;
+        .carousel-button{
+            position:absolute;
+            top: 11.5rem;
+        }
+        .prev{
+            left: -2.5rem;
+        }
+        .next{
+            right: -2.5rem;
+        }
+        
+    }
 }
 
 
