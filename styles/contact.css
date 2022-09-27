@@ -592,12 +592,6 @@ header h1 {
   top: -8rem;
 }
 
-.formValidation {
-  text-align: center;
-  position: relative;
-  top: -10rem;
-}
-
 .commentForm,
 .contactForm {
   display: -webkit-box;
@@ -640,6 +634,19 @@ textarea {
 
 button {
   margin-top: 0;
+}
+
+.formValidation {
+  text-align: center;
+  position: relative;
+  top: -10rem;
+}
+
+.submitError {
+  color: red;
+  text-align: center;
+  position: relative;
+  top: -10rem;
 }
 
 footer {

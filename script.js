@@ -22,6 +22,7 @@ contactForm.addEventListener('submit', function(event){
         
     } else{
         validationText.innerHTML = "Error! Please complete all required fields";
+        formValidation.className = 'submitError';
     }
 
 
