@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/f21b5dfadd.js" crossorigin="anonymous"></script>
     <title>Contact | The Restaurant Mall</title>
     <link rel="stylesheet" href="./styles/contact.css">
+    <script src="./script.js" defer></script> <!--defer so JS loads after HTML-->
 </head>
 <body>
     <header>
@@ -71,7 +72,7 @@
                     </address>
                 </div><!--contactDetails ends-->
                 <div class="formContainer">
-                    <form action="#" method="#" class="contactForm" name="myForm">
+                    <form action="#" method="#" class="contactForm" name="contactForm">
                         <div class="userInput">
                             <label for="userName" class="visually-hidden">Name</label>
                             <input type="text" id="userName" name="userName" placeholder="Name">
@@ -81,10 +82,13 @@
                         </div>
 
                         <label for="message" class="visually-hidden">Message</label>
-                        <textarea name="userMessage" id="message" cols="30" rows="10" minlength="5" maxlength="500" placeholder="Message"></textarea>
+                        <textarea name="userMessage" id="message" cols="30" rows="10" minlength="1" maxlength="500" placeholder="Message"></textarea>
 
                         <button type="submit">Submit</button>
                     </form><!--contactForm ends-->
+                    <div class="formValidation">
+                        <p class="validationText"></p>
+                    </div>
                 </div> <!--formContainer ends-->
             </div> <!--wrapper ends-->
         </section>
