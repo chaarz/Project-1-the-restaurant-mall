@@ -1,4 +1,4 @@
-// Contact Form validation
+// 1. Added UI element: Contact Form validation (on Contact page)
 
 const contactForm = document.querySelector('form[name=contactForm]');
 const formValidation = document.querySelector('.formValidation')
@@ -12,10 +12,6 @@ if (contactForm){
 
         event.preventDefault();
 
-        // console.log(event);
-
-        // console.log('Form has been submitted!');
-
         if(userMessage.value && email.value && userName.value){
 
             formValidation.className = 'submitSuccess';
@@ -27,21 +23,22 @@ if (contactForm){
             // print error message
             validationText.innerHTML = "Error! Please complete all required fields";
         }
-                // clearing up the form fields when submitted 
-                userMessage.value = '';
-                email.value = '';
-                userName.value= '';
+
+        // clearing up the form fields when submitted 
+        userMessage.value = '';
+        email.value = '';
+        userName.value= '';
     });
 }
 
-// Make new comments appear on the Blog page
+// 2. Added UI element: Make new comments appear on the Blog page
 
-// select the comment form
+
 const commentForm = document.querySelector('form[name=commentForm]');
 const userComment = document.querySelector('textarea[name=userComment]')
 const comment2 = document.querySelector(".comment2");
-// define userName, email and userMessage variables
-// after user has completed the form, Post comment > 'submit' event listener
+
+// after user has completed the form, post their comment. Use 'submit' event listener
 
 if(commentForm){
     commentForm.addEventListener('submit', function(event){
@@ -49,12 +46,12 @@ if(commentForm){
         event.preventDefault();
     
         if (userComment.value && email.value && userName.value){
-    // the comment is posted on the page
+    // if all fields are completed the comment is posted on the page
         // create the <div> with the comment content
         const newComment = document.createElement('div')
-        // add the .comments class to the nweCOmment
+        // add the .comments class to the newComment
         newComment.classList.add("comment")
-        // modifed the content of the newComment
+        // modify the content of the newComment
         newComment.innerHTML = `
         <div class="commentImg">
             <img src="./the-restaurant-mall-assets/comment-1.jpg" alt="${userName.value}'s profile picture">
@@ -64,18 +61,23 @@ if(commentForm){
         <p>${userComment.value}</p>
         </div>
         `
-        // append the newly created comment to the div with class of .comments as the next sibling of the comment2 div
+        // add newComment to the div with class of .comments as the element before the next div i.e. before the formContainer so it appears after the last comment currently present on the page
         const formContainer = document.querySelector('.formContainer')
-        // insert our newComment before the next div i.e. before formContainer on the blog page
         formContainer.insertAdjacentElement('beforebegin', newComment);
         
         } else{
-            // create an alert 
+            // create an error alert 
             alert("Error! To post your comment, please complete all required fields")
         }
 
+        // clearing up the form fields when submitted 
+        userComment.value = '';
+        email.value = '';
+        userName.value= '';
     });
 }
+
+
 
 //     <div class="comment comment1">
 //     <div class="commentImg">
