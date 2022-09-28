@@ -53,12 +53,12 @@ if(commentForm){
         newComment.classList.add("comment")
         // modify the content of the newComment
         newComment.innerHTML = `
-        <div class="commentImg">
-            <img src="./the-restaurant-mall-assets/comment-1.jpg" alt="${userName.value}'s profile picture">
+        <div class="commentImg squareIcon">
+            <i class="fa-solid fa-user-large"></i>
         </div>
         <div class="commentText">
-        <p><span>Wednesday September 28, 2022 by ${userName.value}</span></p>
-        <p>${userComment.value}</p>
+            <p><span>Wednesday September 28, 2022 by ${userName.value}</span></p>
+            <p>${userComment.value}</p>
         </div>
         `
         // add newComment to the div with class of .comments as the element before the next div i.e. before the formContainer so it appears after the last comment currently present on the page
@@ -79,18 +79,7 @@ if(commentForm){
 
 
 
-//     <div class="comment comment1">
-//     <div class="commentImg">
-//         <img src="./the-restaurant-mall-assets/comment-1.jpg" alt="Ali's profile picture">
-//     </div>
-//     <div class="commentText">
-//         <p><span>Tuesday October 9th, 2019 by Ali</span></p>
-//         <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Done euismod scelerisque igula. Maecenas eu varius risus..</p>
-//     </div>
-// </div> <!--comment1 ends-->
-
-
-// Attempted Image Carousel
+// 3. Attempted Image Carousel on home page: added previous and next buttons and event listeners. 
 
 // const gallery = document.querySelector(".gallery");
 // // const images = Array.from(gallery.children);
@@ -141,7 +130,7 @@ if(commentForm){
 // });
 
 // // function moveToNextImg() {
-// //     if (imgIndex === imgCount - 1) {
+// //     console.log('hello next')
 
 // //     }
 // // }

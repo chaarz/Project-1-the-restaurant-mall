@@ -95,6 +95,18 @@
                     }
                     
                 }
+                .squareIcon{
+                    color: $almostBlack;
+                    background-color: $sunflowerYellow;
+                    width: 4rem;
+                    height: 4rem;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    i {
+                        font-size: 3rem;
+                    }
+                }
                 .commentText{
                     span{
                         color: $sunflowerYellow;
