@@ -12,21 +12,28 @@ contactForm.addEventListener('submit', function(event){
 
     event.preventDefault();
 
-    console.log(event);
+    // console.log(event);
 
-    console.log('Form has been submitted!');
+    // console.log('Form has been submitted!');
 
-    if(userMessage.value !== "" && email.value !=="" && userName.value !== ""){
-            // print success message
+    if(userMessage.value && email.value && userName.value){
+
+        formValidation.className = 'submitSuccess';
+        // print success message
         validationText.innerHTML = "Thank you! Your message was successfully sent.";
         
     } else{
-        validationText.innerHTML = "Error! Please complete all required fields";
         formValidation.className = 'submitError';
+        // print error message
+        validationText.innerHTML = "Error! Please complete all required fields";
     }
+            // clearing up the form fields when submitted 
+            userMessage.value = '';
+            email.value = '';
+            userName.value= '';
 
-
-})
+ 
+});
 
 
 

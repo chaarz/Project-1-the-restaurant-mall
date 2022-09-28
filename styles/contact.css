@@ -649,6 +649,13 @@ button {
   top: -10rem;
 }
 
+.submitSuccess {
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  top: -10rem;
+}
+
 footer {
   background-color: #171B0E;
 }
